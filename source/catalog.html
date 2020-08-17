@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="96" height="15" alt="Погнали">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__site site-nav">
+            <li class="site-nav__item">
+              <a href="index.html">О сервисе</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="form.html">Направления</a>
+            </li>
+            <li class="site-nav__item">
+              <a>Попутчики</a>
+            </li>
+          </ul>
+          <ul class="main-nav__user user-nav">
+            <li class="user-nav__item">
+              <a class="user-nav__login js-login" href="login.html">
+                Авторизация
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__contacts contacts-list">
+            <li class="contacts-list__item">
+              <a class="contacts-list__link contacts-list__link--phone" href="tel:+78005558628">
+                8 800 555-86-28
+              </a>
+            </li>
+            <li class="contacts-list__item">
+              <a class="contacts-list__link contacts-list__link--email" href="mailto:mail@htmlacademy.ru">
+                mail@htmlacademy.ru
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__social social">
+            <li class="social__item">
+              <a class="social__link" href="https://www.facebook.com/">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://vk.com/">
+                <span class="visually-hidden">Vkontakte</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.instagram.com/">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-catalog">
+      <h1 class="main-catalog__title">Попутчики</h1>
+     
+
+      <section class="companions-filtered">
+        <h2 class="visually-hidden">Каталог попутчиков</h2>
+        
+        <ul class="companions-filtered__list">
+          <li class="companions-filtered__item user-card">
+            <h3 class="user-card__title user-card__title--busy">
+              <a class="user-card__profile-link" href="#">Таня Фирсова</a>
+            </h3>
+            <div class="user-card__image-wrapper">
+              <a class="user-card__photo" href="#">
+                <img src="http://placehold.it/70x70">
+              </a>
+            </div>
+            <p class="user-card__likes user-card__likes--active">1,5 М</p>
+            <ul class="user-card__tags tags">
+              <li class="tags__item">#ЗОЖ</li>
+              <li class="tags__item">#ПП</li>
+              <li class="tags__item">#Фитнес</li>
+              <li class="tags__item">#пляж</li>
+              <li class="tags__item">#авокадо</li>
+              <li class="tags__item">#смузи</li>
+            </ul>
+            <p class="user-card__text">хочет посетить:</p>
+            <ul class="user-card__routes routes">
+              <li class="routes__item routes__item--sri-lanka">Шри-Ланка</li>
+              <li class="routes__item routes__item--thailand">Таиланд</li>
+              <li class="routes__item routes__item--seychelles">Сейшелы</li>
+            </ul>
+            <p class="user-card__text">транспорт:</p>
+            <ul class="user-card__transport transport">
+              <li class="transport__item transport__item--active">
+                  <svg class="transport__icon transport__icon--airplane" width="19" height="21">
+                    <use xlink:href="#"/>
+                  </svg>
+              </li>
+              <li class="transport__item">
+                  <svg class="transport__icon transport__icon--bus" width="17" height="21">
+                    <use xlink:href="#"/>
+                  </svg>
+              </li>
+              <li class="transport__item">
+                  <svg class="transport__icon transport__icon--bicycle" width="24" height="21">
+                    <use xlink:href="#"/>
+                  </svg>
+              </li>
+              <li class="transport__item">
+                  <svg class="transport__icon transport__icon--hiking" width="20" height="21">
+                    <use xlink:href="#"/>
+                  </svg>
+              </li>
+            </ul>
+            <p class="user-card__text">левел:</p>
+            <div class="user-card__user-level user-level">
+              <img src="http://placehold.it/45x45">
+              <span class="user-level__number">99</span>
+              <span class="user-level__text">level</span>
+            </div>
+            <a class="user-card__button button" href="#">Позвать</a>
+          </li>
+
+          <li class="companions-filtered__item user-card">
+            <h3 class="user-card__title user-card__title--busy">
+              <a class="user-card__profile-link" href="#">Петя Демин</a>
+            </h3>
+            <div class="user-card__image-wrapper">
+              <a class="user-card__photo" href="#">
+                <img src="http://placehold.it/70x70">
+              </a>
+            </div>
+            <p class="user-card__likes">150</p>
+            <ul class="user-card__tags tags">
+              <li class="tags__item">#бургер</li>
+              <li class="tags__item">#бар</li>
+              <li class="tags__item">#футбол</li>
+              <li class="tags__item">#концерт</li>
+              <li class="tags__item">#крафт</li>
+            </ul>
+            <p class="user-card__text">хочет посетить:</p>
+            <ul class="user-card__routes routes">
+              <li class="routes__item routes__item--belgium">Бельгия</li>
+              <li class="routes__item routes__item--czech">Чехия</li>
+            </ul>
+            <p class="user-card__text">транспорт:</p>
+            <ul class="user-card__transport transport">
+              <li class="transport__item transport__item--active">
+                  <svg class="transport__icon transport__icon--airplane" width="19" height="21">
+                    <use xlink:href="#"/>
+                  </svg>
+              </li>
+              <li class="transport__item transport__item--active">
+                  <svg class="transport__icon transport__icon--bus" width="17" height="21">
+                    <use xlink:href="#"/>
+                  </svg>
+              </li>
+              <li class="transport__item transport__item--active">
+                  <svg class="transport__icon transport__icon--bicycle" width="24" height="21">
+                    <use xlink:href="#"/>
+                  </svg>
+              </li>
+              <li class="transport__item">
+                  <svg class="transport__icon transport__icon--hiking" width="20" height="21">
+                    <use xlink:href="#"/>
+                  </svg>
+              </li>
+            </ul>
+            <p class="user-card__text">левел:</p>
+            <div class="user-card__user-level user-level">
+              <img src="http://placehold.it/45x45">
+              <span class="user-level__number">80</span>
+              <span class="user-level__text">level</span>
+            </div>
+            <a class="user-card__button button" href="#">Позвать</a>
+          </li>
+
+          <li class="companions-filtered__item user-card">
+            <h3 class="user-card__title user-card__title--busy">
+              <a class="user-card__profile-link" href="#">Марк Смолов</a>
+            </h3>
+            <div class="user-card__image-wrapper">
+              <a class="user-card__photo" href="#">
+                <img src="http://placehold.it/70x70">
+              </a>
+            </div>
+            <p class="user-card__likes">1700</p>
+            <ul class="user-card__tags tags">
+              <li class="tags__item">#рэп</li>
+              <li class="tags__item">#тату</li>
+              <li class="tags__item">#хайпбист</li>
+              <li class="tags__item">#кросовки</li>
+              <li class="tags__item">#суприм</li>
+            </ul>
+            <p class="user-card__text">хочет посетить:</p>
+            <ul class="user-card__routes routes">
+              <li class="routes__item routes__item--usa">США</li>
+              <li class="routes__item routes__item--australia">Австралия</li>
+              <li class="routes__item routes__item--dominican">Доминикана</li>
+            </ul>
+            <p class="user-card__text">транспорт:</p>
+            <ul class="user-card__transport transport">
+              <li class="transport__item transport__item--active">
+                  <svg class="transport__icon transport__icon--airplane" width="19" height="21">
+                    <use xlink:href="#"/>
+                  </svg>
+              </li>
+              <li class="transport__item">
+                  <svg class="transport__icon transport__icon--bus" width="17" height="21">
+                    <use xlink:href="#"/>
+                  </svg>
+              </li>
+              <li class="transport__item transport__item--active">
+                  <svg class="transport__icon transport__icon--bicycle" width="24" height="21">
+                    <use xlink:href="#"/>
+                  </svg>
+              </li>
+              <li class="transport__item">
+                  <svg class="transport__icon transport__icon--hiking" width="20" height="21">
+                    <use xlink:href="#"/>
+                  </svg>
+              </li>
+            </ul>
+            <p class="user-card__text">левел:</p>
+            <div class="user-card__user-level user-level">
+              <img src="http://placehold.it/45x45">
+              <span class="user-level__number">25</span>
+              <span class="user-level__text">level</span>
+            </div>
+            <a class="user-card__button button" href="#">Позвать</a>
+          </li>
+
+          <li class="companions-filtered__item user-card">
+            <h3 class="user-card__title user-card__title--ready">
+              <a class="user-card__profile-link" href="#">Лариса Роговая</a>
+            </h3>
+            <div class="user-card__image-wrapper">
+              <a class="user-card__photo" href="#">
+                <img src="http://placehold.it/70x70">
+              </a>
+            </div>
+            <p class="user-card__likes">23</p>
+            <ul class="user-card__tags tags">
+              <li class="tags__item">#образование</li>
+              <li class="tags__item">#карьера</li>
+              <li class="tags__item">#учеба</li>
+              <li class="tags__item">#линкедин</li>
+            </ul>
+            <p class="user-card__text">хочет посетить:</p>
+            <ul class="user-card__routes routes">
+              <li class="routes__item routes__item--uk">Великобритания</li>
+              <li class="routes__item routes__item--germany">Германия</li>
+            </ul>
+            <p class="user-card__text">транспорт:</p>
+            <ul class="user-card__transport transport">
+              <li class="transport__item transport__item--active">
+                  <svg class="transport__icon transport__icon--airplane" width="19" height="21">
+                    <use xlink:href="#"/>
+                  </svg>
+              </li>
+              <li class="transport__item transport__item--active">
+                  <svg class="transport__icon transport__icon--bus" width="17" height="21">
+                    <use xlink:href="#"/>
+                  </svg>
+              </li>
+              <li class="transport__item">
+                  <svg class="transport__icon transport__icon--bicycle" width="24" height="21">
+                    <use xlink:href="#"/>
+                  </svg>
+              </li>
+              <li class="transport__item">
+                  <svg class="transport__icon transport__icon--hiking" width="20" height="21">
+                    <use xlink:href="#"/>
+                  </svg>
+              </li>
+            </ul>
+            <p class="user-card__text">левел:</p>
+            <div class="user-card__user-level user-level">
+              <img src="http://placehold.it/45x45">
+              <span class="user-level__number">50</span>
+              <span class="user-level__text">level</span>
+            </div>
+            <a class="user-card__button button" href="#">Позвать</a>
+          </li>
+        </ul>
+        <a class="companions-filtered__button button" href="#">Показать еще</a>
+        
+        <ul class="companions-filtered__pagination pagination">
+            <li class="pagination__item pagination__item--active">
+              <a class="pagination__link">1</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">3</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">4</a>
+            </li>
+            <li class="pagination__button pagination__button--back">
+              <a class="pagination__link" href="#">
+                <span class="visually-hidden">Назад</span>
+              </a>
+            </li>
+            <li class="pagination__button pagination__button--forward">
+              <a class="pagination__link" href="#">
+                <span class="visually-hidden">Вперед</span>
+              </a>
+            </li>
+          </ul>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="96" height="15" alt="Логотип Погнали?">
+        </a>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="https://www.facebook.com/">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.instagram.com/">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="copyright__logo" src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+            <span class="visually-hidden">HTML Academy</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
