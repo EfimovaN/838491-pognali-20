@@ -1,6 +1,8 @@
 .page-header {
-  min-height: 73px;
-  background-color: #161c36;
+  &--closed {
+    min-height: 73px;
+    background-color: #161c36;
+  }
 
   &--opened {
     min-height: 568px;
