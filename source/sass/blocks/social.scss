@@ -1,0 +1,57 @@
+.social {
+  display: flex;
+  justify-content: start;
+  list-style: none;
+  margin-left: 84px;
+
+  // @media (min-width: $tablet-width) {
+  //   margin: 0;
+  //   padding: 0;
+  //   padding-left: 20px;
+  //   width: 146px;
+  // }
+}
+
+.social__item {
+  margin-top: 4px;
+  margin-right: 27px;
+
+  // @media (min-width: $tablet-width) {
+  //   margin: 0;
+  //   padding-bottom: 10px;
+  // }
+
+  // @media (min-width: $desktop-width) {
+  //   padding: 0;
+  // }
+}
+
+.social__icon {
+  color: #192144;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  // @media (min-width: $tablet-width) {
+  //   &--vk {
+  //     width: 30px;
+  //     height: 16px;
+  //   }
+
+  //   &--instagram {
+  //     width: 23px;
+  //     height: 23px;
+  //   }
+
+  //   &--fb {
+  //     width: 14px;
+  //     height: 28px;
+  //   }
+  // }
+}

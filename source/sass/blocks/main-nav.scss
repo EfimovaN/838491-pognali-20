@@ -66,3 +66,27 @@
     display: block;
   }
 }
+
+.main-nav__site,
+.main-nav__contacts,
+.main-nav__user,
+.main-nav__social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: inherit;
+  color:  #192144;;
+  text-transform: uppercase;
+}
+
+.main-nav__site {
+  margin: 63px 0 55px;
+}
+
+.main-nav__user {
+  margin-bottom: 65px;
+}
+
+.main-nav__contacts {
+  margin-bottom: 25px;
+}
