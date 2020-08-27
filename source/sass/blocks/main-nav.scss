@@ -5,7 +5,12 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     grid-template-rows: min-content;
-    
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -77,12 +82,14 @@
 .main-nav--nojs .main-nav__auth,
 .main-nav--nojs .main-nav__site,
 .main-nav--nojs .main-nav__contacts {
+
   @media (max-width: $tablet-width-only) {
     display: block;
   }
 }
 
 .main-nav--nojs .main-nav__social {
+
   @media (max-width: $tablet-width-only) {
     display: flex;
   }
@@ -91,12 +98,14 @@
 .main-nav--closed .main-nav__site,
 .main-nav--closed .main-nav__contacts,
 .main-nav--closed .main-nav__social {
+
   @media (max-width: $tablet-width-only) {
     display: none;
   }
 }
 
 .main-nav--closed .main-nav__auth {
+
   @media (max-width: $mobile-width-only) {
     display: none;
   }
@@ -104,6 +113,7 @@
 
 .main-nav--opened .main-nav__auth {
   display: block;
+
   @media (min-width: $tablet-width) {
     font-weight: 400;
   }
@@ -122,6 +132,7 @@
 }
 
 .main-nav__site {
+  position: relative;
   margin: 63px 0 54px;
 
   @media (min-width: $tablet-width) {
@@ -129,6 +140,27 @@
     grid-column-end: 4;
     grid-row-start: 2;
     margin: 90px 0 0 58px;
+  }
+  
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-left: 143px;
+    max-width: 630px;
+  }
+
+  &::before {
+    @media (min-width: $desktop-width) { 
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      top: 13px;
+      left: -105px;
+      background-color: #ffffff;
+    }
   }
 }
 
@@ -145,6 +177,11 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    order: 2;    
+  }
 }
 
 .main-nav__contacts {
@@ -157,10 +194,15 @@
     grid-row-start: 3;
     margin: 153px 0 0 88px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+  }
 }
 
 .main-nav__social {
-    
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -168,4 +210,3 @@
     margin: 102px 0 0;
   }
 }
-

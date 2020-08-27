@@ -11,10 +11,26 @@
     text-align: left;
   }
 
-
-
+   @media (min-width: $desktop-width) { 
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .site-nav a {
   color:  #192144;
+
+  @media (min-width: $desktop-width) {
+    color:  #ffffff;
+
+  }
+}
+
+.site-nav__item {
+  @media (min-width: $desktop-width) { 
+    margin-top: 5px;
+    margin-right: 34px;
+  }
+  
+
 }

@@ -7,6 +7,10 @@
     font-size: 28px;
     line-height: 28px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
 }
 
 .contacts-list a {
@@ -21,6 +25,11 @@
     min-height: 67px;
     margin-left: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    min-height: 50px;
+  }
 }
 
 .contacts-list__link {
@@ -28,7 +37,6 @@
 
   &::before {
     content: "";
-    display: block;
     position: absolute;
     width: 45px;
     height: 45px;
@@ -43,37 +51,67 @@
       top: -24px;
       left: -91px;
     }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.contacts-list__icon {
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #ff8d30;
+    border-radius: 50%;
   }
 
-  // &--img {
-  //   &::after {
-  //     content: "";
-  //     display: block;
-  //     position: absolute;
-  //     width: 16px;
-  //     height: 15px;
-  //     top: 3px;
-  //     left: -46px;
-  //     background-repeat: no-repeat;
-  //     z-index: 1;
-  //   }
-  // }
+  &--img {
+    &::after {
+      @media (min-width: $desktop-width) {
+        position: absolute;
+        content: "";
+        width: 18px;
+        height: 18px;
+        top: 17px;
+        left: 17px;
+        background-repeat: no-repeat;
+      }
+    }
+  }
 
-  // &--phone {
-  //   &::after {
-  //     background-image: url("../img/contacts-phone.svg");
-  //   }
-  // }
+  &--phone {
+    &::after {
+      @media (min-width: $desktop-width) {
+        background-image: url("../img/topmenu-phone.svg");
+      }
+    }
+  }
 
-  // &--email {
-  //   &::after {
-  //     background-image: url("../img/contacts-mail.svg");
-  //   }
-  // }
+  &--mail {
+    @media (min-width: $desktop-width) {
+      background-color: #ffbd30;
+    }
+    
+    &::after {
+      @media (min-width: $desktop-width) {
+        width: 17px;
+        height: 15px;
+        top: 19px;
+        background-image: url("../img/topmenu-mail.svg");
+      }
+    }
+  }
 }
 
 .contacts-list__svg {
   color: #ffd74b;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 
   &--img {
     position: absolute;
@@ -99,3 +137,8 @@
   }
 }
 
+.contacts-list__contact {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
