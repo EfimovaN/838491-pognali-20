@@ -5,6 +5,8 @@ var logoWhite = document.querySelector('.logo__image.logo__white');
 var logoBlue = document.querySelector('.logo__image.logo__blue');
 
 navMain.classList.remove('main-nav--nojs');
+navMain.classList.remove('main-nav--opened');
+navMain.classList.add('main-nav--closed');
 pageHeader.classList.remove('page-header--opened');
 pageHeader.classList.add('page-header--closed');
 logoWhite.classList.toggle('logo__image--hidden');

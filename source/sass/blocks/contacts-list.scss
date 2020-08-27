@@ -2,6 +2,11 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .contacts-list a {
@@ -9,9 +14,13 @@
 }
 
 .contacts-list__item {
-
   min-height: 45px;
   margin-left: 60px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 67px;
+    margin-left: 60px;
+  }
 }
 
 .contacts-list__link {
@@ -29,6 +38,10 @@
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
+      width: 68px;
+      height: 68px;
+      top: -24px;
+      left: -91px;
     }
   }
 
@@ -65,10 +78,24 @@
   &--img {
     position: absolute;
     left: -46px;
+
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 22px;
+      top: -2px;
+      left: -69px;
+    }
   }
 
   &--mail {
     top: 1px;
+
+    @media (min-width: $tablet-width) {
+      width: 28px;
+      height: 19px;
+      top: 2px;
+      left: -70px;
+    }
   }
 }
 

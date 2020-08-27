@@ -23,12 +23,18 @@
 
   &--auth {
     padding: 10px 0;
-    
     text-align: center;
     font-size: 17px;
     line-height: 30px;
     color: #161c35;
     border-radius: 25px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+      padding: 16px 0 14px;
+      
+    }
 
     // &:hover,
     // &:focus {
