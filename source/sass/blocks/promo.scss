@@ -1,0 +1,39 @@
+.promo {
+	min-height: 928px;
+	background-color: #161c36;
+	background-image: url("../img/globe-back-mobile@1x.jpg");
+	background-position: 0% -74px;
+  background-repeat: no-repeat;
+  z-index: -1;
+
+	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+		background-image: url("../img/globe-back-mobile@2x.jpg");
+		background-size: 320px auto;
+	}
+	
+}
+
+.promo__title {
+	margin: 0;
+	margin-bottom: 224px;
+	padding: 20px 10px;
+	font-size: 36px;
+	line-height: 40px;
+	text-align: center;
+	color: #ffffff;
+
+}
+
+blockquote {
+	margin: 28px 0 31px;
+	padding: 0 80px 0 25px;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 300;
+	color: #ffffff;
+}
+
+.promo__review-author {
+	font-style: normal;
+	font-weight: 700;
+}

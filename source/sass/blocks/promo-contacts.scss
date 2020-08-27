@@ -1,0 +1,69 @@
+.promo-contacts {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: start;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.promo-contacts a {
+  color:  #192144;
+}
+
+.promo-contacts__item {
+  margin: 0;
+  min-height: 40px;
+}
+
+.promo-contacts__icon {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: #ff8d30;
+  border-radius: 50%;
+
+  &--img {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 18px;
+      height: 18px;
+      top: 12px;
+      left: 12px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--phone {
+    &::after {
+      background-image: url("../img/topmenu-phone.svg");
+    }
+  }
+
+  &--mail {
+    background-color: #ffbd30;
+     
+    &::after {
+      width: 17px;
+      height: 15px;
+      top: 14px;
+      background-image: url("../img/topmenu-mail.svg");
+    }
+  }
+}
+
+.promo-contacts__auth {
+  padding: 13px 0 10px;
+  min-height: 40px;
+  width: 190px;
+  font-size: 17px;
+  line-height: 17px;
+}
