@@ -1,0 +1,170 @@
+.about-service {
+	position: relative;
+	// min-height: 392px;
+	background-color: #192144;
+	// background-image: url("../img/about-mobile@1x.png");
+	// background-position: 66% 39px;
+	// background-repeat: no-repeat;
+	border-radius: 0 0 30px 30px;
+	color: #ffffff;
+	z-index: 1;
+
+	// @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+	// 	background-image: url("../img/about-mobile@2x.png");
+	// 	background-size: 293px auto;
+	// }
+		
+
+	@media (min-width: $tablet-width) {
+		background-color: #182044;
+		border-radius: 0 0 60px 60px;
+	}
+
+	@media (min-width: $desktop-width) {
+		margin-top: -40px;
+		background-color: #192144;
+		border-radius: 0 0 55px 55px;
+		z-index: -1;
+	}
+}
+
+.about-service .container {
+	min-height: 392px;
+	color: #ffffff;
+	background-image: url("../img/about-mobile@1x.png");
+	background-position: 66% 39px;
+	background-repeat: no-repeat;
+
+	@media (min-width: $tablet-width) {
+		background-image: url("../img/about-tablet@1x.png");
+		background-position: 98% 144px;
+		
+		@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+			background-image: url("../img/about-tablet@2x.png");
+			background-size: 376px auto;
+		}
+	}
+	
+	@media (min-width: $desktop-width) {
+		background-image: url("../img/globe-back-desktop@1x.jpg");
+		background-position: right 60px top 96px;
+
+		@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+			background-image: url("../img/about-desktop@2x.png");
+			background-size: 630px auto;
+		}
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 113px;
+		height: 132px;
+    top: 39px;
+		left: 0;
+		background-color: #141b3b;
+		border-radius: 0 20px 20px 0;
+		z-index: -1;
+
+		@media (min-width: $tablet-width) {
+			width: 688px;
+			height: 212px;
+			top: 96px;
+			left: 40px;
+			border-radius: 20px;
+		}
+
+		@media (min-width: $desktop-width) {
+			width: 212px;
+			height: 212px;
+			top: 80px;
+			left: 60px;
+		}
+	}
+}
+
+.about-service__wrapper {
+	position: relative;
+	margin: 0;
+	padding: 0 23px;
+	z-index: 2;
+
+	@media (min-width: $tablet-width) {
+		padding: 0 0 89px 34px;
+		width: 340px;
+	}
+
+	@media (min-width: $desktop-width) {
+		padding: 0 0 70px 70px;
+		width: 710px;
+	}
+}
+
+.about-service__title {
+	margin: 0;
+	padding: 70px 0 5px;
+	font-size: 24px;
+	line-height: 24px;
+	text-align: left;
+	color: #ff8d30;
+
+	@media (min-width: $tablet-width) {
+		padding: 137px 0 12px;
+		font-size: 45px;
+		line-height: 45px;
+	}
+
+	@media (min-width: $desktop-width) {
+		padding: 143px 0 30px;
+	}
+}
+
+.about-service__description {
+	margin-bottom: 19px;
+
+	@media (min-width: $tablet-width) {
+		margin-bottom: 30px;
+		font-size: 28px;
+		line-height: 33px;
+	}
+
+	@media (min-width: $desktop-width) {
+		margin-bottom: 38px;
+	}
+}
+
+.about-service__text {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 700;
+
+	@media (min-width: $tablet-width) {
+		font-size: 21px;
+		line-height: 25px;
+	}
+
+	@media (min-width: $desktop-width) {
+		width: 425px;
+			
+	}
+}
+
+.about-service__button {
+	display: none;
+
+	@media (min-width: $tablet-width) {
+		display: block;
+		margin: 53px 0 0;
+		width: 276px;
+		min-height: 80px;
+	}
+
+	@media (min-width: $desktop-width) {
+		margin: 85px 0 93px;
+	}
+}
+
+
+
+
+

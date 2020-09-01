@@ -5,8 +5,7 @@
 	background-image: url("../img/globe-back-mobile@1x.jpg");
 	background-position: center -74px;
 	background-repeat: no-repeat;
-	// overflow: hidden;
-	
+		
 	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
 		background-image: url("../img/globe-back-mobile@2x.jpg");
 		background-size: 320px auto;
@@ -18,14 +17,15 @@
 		background-position: center 250px;
 		
 		@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-			background-image: url("../img/globe-back-tablet@2x.jpg");
-			background-size: 1479px auto
+		background-image: url("../img/globe-back-tablet@2x.jpg");
+		background-size: 1479px auto;
 		}
 	}
 
 	@media (min-width: $desktop-width) {
 		min-height: 640px;
 		background-color: #161c34;
+		border-radius: 0 0 40px 40px;
 		background-image: url("../img/globe-back-desktop@1x.jpg");
 		background-position: center -132px;
 
@@ -62,6 +62,8 @@
     grid-row: 1 / 2;
 		padding: 76px 0px 0 67px;
 		width: 500px;
+		min-height: 500px;
+
 		text-align: left;
 	}
 }
