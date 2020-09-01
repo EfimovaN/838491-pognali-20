@@ -1,12 +1,11 @@
 .promo-contacts {
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: start;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
   list-style: none;
+  
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -18,8 +17,8 @@
 }
 
 .promo-contacts__item {
-  margin: 0;
   min-height: 40px;
+  z-index: 2;
 }
 
 .promo-contacts__icon {
@@ -67,3 +66,8 @@
   font-size: 17px;
   line-height: 17px;
 }
+
+
+
+
+

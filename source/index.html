@@ -113,6 +113,15 @@
       <section class="promo">
         <div class="container">
           <h2 class="promo__title">В путешествие с крутыми попутчиками!</h2>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/traveller-illustration-desktop@1x.webp 1x, img/traveller-illustration-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/traveller-illustration-tablet@1x.webp 1x, img/traveller-illustration-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/traveller-illustration-mobile@1x.webp 1x, img/traveller-illustration-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/traveller-illustration-desktop@1x.png 1x, img/traveller-illustration-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/traveller-illustration-tablet@1x.png, img/traveller-illustration-tablet@2x.png 2x">
+            <img class="promo__image" src="img/traveller-illustration-mobile@1x.png" srcset="img/traveller-illustration-mobile@2x.png 2x" alt="Человек с чемоданом">
+          </picture>
+
           <ul class="promo__contacts promo-contacts">
             <li class="promo-contacts__item">
               <a class="promo-contacts__icon promo-contacts__icon--img promo-contacts__icon--phone" href="tel:+78005558628">
@@ -131,10 +140,10 @@
 
           <blockquote class="promo__review">
             <p class="promo__review-text">«Лучшее приложение, что я видел в жизни!»</p>
-            <cite class="promo__review-author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+            <cite class="promo__review-author">Мурат Эльтазин главный&nbsp;редактор газеты «гаджетлайф»</cite>
           </blockquote>
           
-          <ul class="promo__list promo-list">
+          <ol class="promo__list promo-list">
             <li class="promo-list__item promo-list__item--first">
               <p class="promo-list__description">Выберите направление</p>
             </li>
@@ -147,7 +156,7 @@
             <li class="promo-list__item promo-list__item--fourth">
               <p class="promo-list__description">Путешествуйте вместе!</p>
             </li>
-          </ul>
+          </ol>
         </div>
       </section>
 
