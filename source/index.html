@@ -171,36 +171,59 @@
         </div>
       </section>
 
-      <section class="direction visually-hidden">
-        <h2 class="direction__title">О сервисе</h2>
-        <p class="direction__description">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-        <ul class="direction__country-list country-list">
-          <li class="country-list__item">
-            <img src="http://placehold.it/270x110">
-            <div class="country-list__info">
-              <h3 class="country-list__title country-list__title--thailand">Таиланд</h3>
-              <span class="country-list__visitors">18321</span>
-              <span class="country-list__place">Джунгли зовут!</span>
-            </div>
-          </li>
-          <li class="country-list__item">
-            <img src="http://placehold.it/270x110">
-            <div class="country-list__info">
-              <h3 class="country-list__title country-list__title--france">Франция</h3>
-              <span class="country-list__visitors">12518</span>
-              <span class="country-list__place">Трэ бьен, манифик!</span>
-            </div>
-          </li>
-          <li class="country-list__item">
-            <img src="http://placehold.it/270x110">
-            <div class="country-list__info">
-              <h3 class="country-list__title country-list__title--czech">Франция</h3>
-              <span class="country-list__visitors">5326</span>
-              <span class="country-list__place">Закоулки старой Европы</span>
-            </div>
-          </li>
-        </ul>
-        <a class="direction__button button" href="form.html">Показать все</a>
+      <section class="direction">
+        <div class="container">
+          <h2 class="direction__title">Направления</h2>
+          <p class="direction__description">Мы не продаем туры и&nbsp;ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          <ul class="direction__country-list country-list">
+            <li class="country-list__item">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/thailand-desktop@1x.webp 1x, img/thailand-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/thailand-mobile@1x.webp 1x, img/thailand-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/thailand-mobile@1x.webp 1x, img/thailand-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/thailand-mobile@1x.jpg, img/thailand-mobile@2x.jpg 2x">
+                <img class="country-list__image" src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x" alt="Таиланд">
+              </picture>
+              <div class="country-list__info">
+                <h3 class="country-list__title country-list__title--icon country-list__title--thailand">Таиланд</h3>
+                <p class="country-list__place">Джунгли зовут!</p>
+                <span class="country-list__visitors">18321</span>
+              </div>
+            </li>
+            <li class="country-list__item">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/france-desktop@1x.webp 1x, img/france-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/france-mobile@1x.webp 1x, img/france-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/france-mobile@1x.webp 1x, img/france-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/france-mobile@1x.jpg, img/france-mobile@2x.jpg 2x">
+                <img class="country-list__image" src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x" alt="Франция">
+              </picture>
+              <div class="country-list__info">
+                <h3 class="country-list__title country-list__title--icon country-list__title--france">Франция</h3>
+                <p class="country-list__place">Трэ бьен, манифик!</p>
+                <span class="country-list__visitors">12518</span>
+              </div>
+            </li>
+            <li class="country-list__item">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/czech-desktop@1x.webp 1x, img/czech-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/czech-mobile@1x.webp 1x, img/czech-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/czech-mobile@1x.webp 1x, img/czech-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/czech-mobile@1x.jpg, img/czech-mobile@2x.jpg 2x">
+                <img class="country-list__image" src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" alt="Чехия">
+              </picture>
+              <div class="country-list__info">
+                <h3 class="country-list__title country-list__title--icon country-list__title--czech">Чехия</h3>
+                <p class="country-list__place">Закоулки старой Европы</p>
+                <span class="country-list__visitors">5326</span>
+              </div>
+            </li>
+          </ul>
+          <a class="direction__button button button--triangle" href="form.html">Показать все</a>
+        </div>
       </section>
 
       <section class="companions visually-hidden">

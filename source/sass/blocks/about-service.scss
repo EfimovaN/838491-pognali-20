@@ -1,19 +1,9 @@
 .about-service {
 	position: relative;
-	// min-height: 392px;
 	background-color: #192144;
-	// background-image: url("../img/about-mobile@1x.png");
-	// background-position: 66% 39px;
-	// background-repeat: no-repeat;
 	border-radius: 0 0 30px 30px;
 	color: #ffffff;
 	z-index: 1;
-
-	// @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-	// 	background-image: url("../img/about-mobile@2x.png");
-	// 	background-size: 293px auto;
-	// }
-		
 
 	@media (min-width: $tablet-width) {
 		background-color: #182044;
@@ -145,7 +135,6 @@
 
 	@media (min-width: $desktop-width) {
 		width: 425px;
-			
 	}
 }
 
@@ -163,8 +152,3 @@
 		margin: 85px 0 93px;
 	}
 }
-
-
-
-
-
