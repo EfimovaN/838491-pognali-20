@@ -7,8 +7,8 @@
 	opacity: 0.99;
 
 	@media (min-width: $tablet-width) {
-		// background-color: #182044;
-		// border-radius: 0 0 60px 60px;
+		padding-bottom: 47px;
+		border-radius: 0 0 60px 60px;
 	}
 
 	@media (min-width: $desktop-width) {
@@ -24,6 +24,7 @@
 }
 
 .direction__title {
+	position: relative;
 	margin: 0;
 	padding: 105px 25px 5px;
 	font-size: 24px;
@@ -32,13 +33,32 @@
 	color: #ff8d30;
 
 	@media (min-width: $tablet-width) {
-		// padding: 137px 0 12px;
-		// font-size: 45px;
-		// line-height: 45px;
+		padding: 108px 33px 30px;
+		font-size: 45px;
+		line-height: 45px;
 	}
 
 	@media (min-width: $desktop-width) {
 		// padding: 143px 0 30px;
+	}
+
+	&::after {
+		@media (min-width: $tablet-width) {
+			content: "";
+			position: absolute;
+			width: 289px;
+			height: 574px;
+			top: 113px;
+			right: 0;
+			background-image: url("../img/flags-back@1x.png");
+			background-repeat: no-repeat;
+
+			@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+				background-image: url("../img/flags-back@1x.png");
+				background-size: 289px auto;
+			}
+
+		}
 	}
 }
 
@@ -47,9 +67,10 @@
 	padding: 0 45px 0 25px;
 
 	@media (min-width: $tablet-width) {
-		// margin-bottom: 30px;
-		// font-size: 28px;
-		// line-height: 33px;
+		margin-bottom: 63px;
+		padding: 0 305px 40px 35px;
+		font-size: 28px;
+		line-height: 33px;
 	}
 
 	@media (min-width: $desktop-width) {
@@ -62,15 +83,15 @@
 	margin: 27px 0 0;
 	width: 270px;
 	min-height: 62px;
-	
+
 
 	@media (min-width: $tablet-width) {
-		margin: 53px 0 0;
-		width: 276px;
-		min-height: 80px;
+		margin: 47px 36px 0;
+		width: auto;
+		min-height: 82px;
 	}
 
 	@media (min-width: $desktop-width) {
-		margin: 85px 0 93px;
+		// margin: 85px 0 93px;
 	}
 }
