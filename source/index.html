@@ -113,14 +113,16 @@
       <section class="promo">
         <div class="container">
           <h2 class="promo__title">В путешествие с крутыми попутчиками!</h2>
-          <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/traveller-illustration-desktop@1x.webp 1x, img/traveller-illustration-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/traveller-illustration-tablet@1x.webp 1x, img/traveller-illustration-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/traveller-illustration-mobile@1x.webp 1x, img/traveller-illustration-mobile@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="img/traveller-illustration-desktop@1x.png 1x, img/traveller-illustration-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/traveller-illustration-tablet@1x.png, img/traveller-illustration-tablet@2x.png 2x">
-            <img class="promo__image" src="img/traveller-illustration-mobile@1x.png" srcset="img/traveller-illustration-mobile@2x.png 2x" alt="Человек с чемоданом">
-          </picture>
+          <div class="promo__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/traveller-illustration-desktop@1x.webp 1x, img/traveller-illustration-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/traveller-illustration-tablet@1x.webp 1x, img/traveller-illustration-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/traveller-illustration-mobile@1x.webp 1x, img/traveller-illustration-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/traveller-illustration-desktop@1x.png 1x, img/traveller-illustration-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/traveller-illustration-tablet@1x.png, img/traveller-illustration-tablet@2x.png 2x">
+              <img src="img/traveller-illustration-mobile@1x.png" srcset="img/traveller-illustration-mobile@2x.png 2x" alt="Человек с чемоданом">
+            </picture>
+          </div>
 
           <ul class="promo__contacts promo-contacts">
             <li class="promo-contacts__item">
@@ -173,8 +175,11 @@
 
       <section class="direction">
         <div class="container">
-          <h2 class="direction__title">Направления</h2>
-          <p class="direction__description">Мы не продаем туры и&nbsp;ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          <div class="direction__wrapper">
+            <h2 class="direction__title">Направления</h2>
+            <p class="direction__description">Мы не продаем туры и&nbsp;ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          </div>
+          
           <ul class="direction__country-list country-list">
             <li class="country-list__item">
               <div class="country-list__image">

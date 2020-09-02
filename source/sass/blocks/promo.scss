@@ -1,10 +1,10 @@
 .promo {
 	position: relative;
-	min-height: 928px;
 	background-color: #161c36;
 	background-image: url("../img/globe-back-mobile@1x.jpg");
 	background-position: center -74px;
 	background-repeat: no-repeat;
+	z-index: 7;
 		
 	@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
 		background-image: url("../img/globe-back-mobile@2x.jpg");
@@ -16,6 +16,7 @@
 		background-image: url("../img/globe-back-tablet@1x.jpg");
 		background-position: center 250px;
 		
+		
 		@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
 		background-image: url("../img/globe-back-tablet@2x.jpg");
 		background-size: 1479px auto;
@@ -23,15 +24,15 @@
 	}
 
 	@media (min-width: $desktop-width) {
-		min-height: 640px;
 		background-color: #161c34;
-		border-radius: 0 0 40px 40px;
+		border-radius: 0 0 60px 60px;
 		background-image: url("../img/globe-back-desktop@1x.jpg");
-		background-position: center -132px;
+		background-position: center top -132px;
+		background-size: contain;
 
 		@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
 			background-image: url("../img/globe-back-desktop@2x.jpg");
-			background-size: 1800px auto;
+			background-size: 1800px 750px;
 		}
 	}
 }
@@ -62,18 +63,19 @@
     grid-row: 1 / 2;
 		padding: 76px 0px 0 67px;
 		width: 500px;
-		min-height: 500px;
-
 		text-align: left;
 	}
 }
 
 .promo__image {
+	height: 255px;
 	position: relative;
 	top: -11px;
 	left: 55px;
 
 	@media (min-width: $tablet-width) {
+		height: 451px;
+		width: 372px;
 		top: 2px;
 		left: 245px;
 	}
@@ -81,13 +83,15 @@
 	@media (min-width: $desktop-width) {
 		grid-column: 2 / 3;
 		grid-row: 1 / 2;
+		height: 618px;
+		width: 431px;
 		top: -22px;
 		left: 4px;
 	}
 }
 
 .promo__contacts {
-	margin: -38px 0 0;
+	margin: -31px 0 0;
 	padding: 0;
 }
 
