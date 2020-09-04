@@ -1,0 +1,24 @@
+.transport {
+  margin: -6px auto 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.transport__item {
+  width: 33px;
+  text-align: center;
+  color: #101d41;
+  opacity: 0.15;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &--active {
+    opacity: 1;
+  }
+}
+

@@ -1,0 +1,40 @@
+.routes {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.routes__item {
+  width: 35px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 20px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &--sri-lanka {
+    background-image: url("../img/flag-sri-lanka.svg");
+  }
+
+  &--thailand {
+    background-image: url("../img/flag-thailand.svg");
+  }
+
+  &--seychelles {
+    background-image: url("../img/flag-seychelles.svg");
+  }
+
+  &--belgium {
+    background-image: url("../img/flag-belgium.svg");
+  }
+
+  &--czech {
+    background-image: url("../img/flag-czech.svg");
+  }
+
+}
+

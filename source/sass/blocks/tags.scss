@@ -1,0 +1,21 @@
+.tags {
+  margin: 0 auto;
+  padding: 0 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.tags__item {
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 5px;
+  text-align: center;
+
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+

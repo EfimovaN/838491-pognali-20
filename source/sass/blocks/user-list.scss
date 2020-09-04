@@ -1,0 +1,152 @@
+.user-list {
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  list-style: none;
+  z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    // padding: 0 36px;
+    // font-size: 20px;
+    // line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // padding: 0 70px;
+  }
+
+  &::before {
+		@media (min-width: $tablet-width) {
+			content: "";
+			position: absolute;
+			width: 140px;
+			height: 140px;
+			top: -39px;
+      left: -1px;
+      background-color: #e2e5f2;
+      border-radius: 20px;
+
+      @media (min-width: $desktop-width) {
+      }
+		}
+	}
+}
+
+.user-list__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 0 10px 0;
+  background-color: #ffffff;
+  min-height: 428px;
+  border-radius: 10px;
+
+
+  @media (min-width: $tablet-width) {
+    // flex-direction: row-reverse;
+    // justify-content: flex-start;
+    // padding: 0;
+    // min-height: 140px;
+    // border-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // width: 560px;
+  }
+}
+
+.user-list__wrapper {
+  order: 0;
+  height: 270px;
+  width: 270px;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.user-list__image {
+
+  &:hover {
+    transform: scale(1.07);
+    transition: 0.4s ease-in-out;
+  }
+
+  @media (min-width: $tablet-width) {
+    // height: 140px;
+    // border-radius: 0 20px 20px 0;
+    // flex-shrink: 0;
+  }
+}
+
+.user-list__title {
+  order: 2;
+  position: relative;
+  margin: 2px 0 0;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 21px;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 6px;
+  //   height: 6px;
+  //   top: 8px;
+  //   left: 53px;
+  //   background-color: #81e31e;
+  //   border-radius: 50%;
+
+  //   &--busy {
+  //     background-color: #f97676;
+  //   }
+  // }
+}
+
+.user-list__profile-link {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 8px;
+    left: -16px;
+    border-radius: 50%;
+    background-color: #81e31e;
+  }
+
+  &--busy {
+    &::before {
+      background-color: #f97676;
+    }
+  }
+}
+
+.user-list__profile-link {
+  color: #1d2e5b;
+}
+
+.user-list__routes {
+  order: 1;
+  position: relative;
+  top: -11px;
+}
+
+.user-list__tags {
+  order: 3;
+}
+
+.user-list__transport {
+  order: 4;
+}
+
+.user-list__user-level {
+  order: 5;
+  position: absolute;
+  top: 17px;
+  left: 17px;
+}

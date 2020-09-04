@@ -69,12 +69,13 @@
 
 .promo__image {
 	height: 255px;
+	width: 192px;
 	position: relative;
 	top: -11px;
 	left: 55px;
 
 	@media (min-width: $tablet-width) {
-		height: 451px;
+		height: 453px;
 		width: 372px;
 		top: 2px;
 		left: 245px;
