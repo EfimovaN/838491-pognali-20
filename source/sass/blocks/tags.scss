@@ -1,10 +1,15 @@
 .tags {
-  margin: 0 auto;
   padding: 0 40px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 30px;
+    font-size: 20px;
+    line-height: 23px;
+  }
 }
 
 .tags__item {
@@ -12,7 +17,6 @@
   background-size: contain;
   margin-left: 5px;
   text-align: center;
-
 
   &:first-child {
     margin-left: 0;

@@ -8,30 +8,13 @@
   z-index: 3;
 
   @media (min-width: $tablet-width) {
-    // padding: 0 36px;
-    // font-size: 20px;
-    // line-height: 20px;
+    display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     // padding: 0 70px;
   }
-
-  &::before {
-		@media (min-width: $tablet-width) {
-			content: "";
-			position: absolute;
-			width: 140px;
-			height: 140px;
-			top: -39px;
-      left: -1px;
-      background-color: #e2e5f2;
-      border-radius: 20px;
-
-      @media (min-width: $desktop-width) {
-      }
-		}
-	}
 }
 
 .user-list__item {
@@ -40,21 +23,16 @@
   flex-direction: column;
   justify-content: flex-start;
   margin: 0 0 10px 0;
-  background-color: #ffffff;
   min-height: 428px;
-  border-radius: 10px;
+  width: 270px;
+  background-color: #ffffff;
+  border-radius: 15px 15px 10px 10px;
 
 
   @media (min-width: $tablet-width) {
-    // flex-direction: row-reverse;
-    // justify-content: flex-start;
-    // padding: 0;
-    // min-height: 140px;
-    // border-radius: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    // width: 560px;
+    width: 285px;
+    min-height: 483px;
+    border-radius: 25px 25px 20px 20px;
   }
 }
 
@@ -64,6 +42,12 @@
   width: 270px;
   overflow: hidden;
   border-radius: 10px 10px 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    height: 285px;
+    border-radius: 20px 20px 0 0;
+  }
 }
 
 .user-list__image {
@@ -71,12 +55,6 @@
   &:hover {
     transform: scale(1.07);
     transition: 0.4s ease-in-out;
-  }
-
-  @media (min-width: $tablet-width) {
-    // height: 140px;
-    // border-radius: 0 20px 20px 0;
-    // flex-shrink: 0;
   }
 }
 
@@ -89,20 +67,14 @@
   font-size: 21px;
   line-height: 21px;
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 6px;
-  //   height: 6px;
-  //   top: 8px;
-  //   left: 53px;
-  //   background-color: #81e31e;
-  //   border-radius: 50%;
-
-  //   &--busy {
-  //     background-color: #f97676;
-  //   }
-  // }
+  @media (min-width: $tablet-width) {
+    margin: 6px 0 0;
+    padding-bottom: 24px;
+    font-size: 24px;
+    line-height: 22px;
+    text-align: left;
+    padding-left: 67px;
+  }
 }
 
 .user-list__profile-link {
@@ -117,6 +89,12 @@
     left: -16px;
     border-radius: 50%;
     background-color: #81e31e;
+
+    @media (min-width: $tablet-width) {
+      width: 8px;
+      height: 8px;
+      left: -23px;
+    }
   }
 
   &--busy {
@@ -149,4 +127,9 @@
   position: absolute;
   top: 17px;
   left: 17px;
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+    left: 23px;
+  }
 }
