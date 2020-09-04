@@ -42,6 +42,12 @@ a {
   @media (min-width: $desktop-width) {
     display: none;
   }
+
+  &--desk {
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),

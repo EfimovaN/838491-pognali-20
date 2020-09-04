@@ -11,10 +11,6 @@
     display: flex;
     justify-content: space-between;
   }
-
-  @media (min-width: $desktop-width) {
-    // padding: 0 70px;
-  }
 }
 
 .user-list__item {
@@ -33,6 +29,11 @@
     width: 285px;
     min-height: 483px;
     border-radius: 25px 25px 20px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
   }
 }
 
