@@ -344,27 +344,31 @@
         </div>
       </section>
 
-      <section class="buisness-tariff visually-hidden">
-        <h2 class="buisness-tariff__title">Бизнес-тарифы</h2>
-        <ul class="buisness-tariff__price business-price">
-          <li class="business-price__item">
-            <span>Реклама у блоггера</span>
-            <span>300 000 руб./пост</span>
-          </li>
-          <li class="business-price__item">
-            <span>Накрутка подписчиков</span>
-            <span>от 1 руб./шт.</span>
-          </li>
-          <li class="business-price__item">
-            <span>Лайки от ботов</span>
-            <span>от 20 коп./лайк</span>
-          </li>
-          <li class="business-price__item">
-            <span>Ваш продакт-плейсмент</span>
-            <span>Индивидуально</span>
-          </li>
-        </ul>
-        <button class="buisness-tariff__close" type="button">Закрыть окно</button>
+      <section class="buisness-tariff">
+        <div class="container">
+          <h2 class="buisness-tariff__title">Добавьте свой профиль</h2>
+
+          <ol class="buisness-tariff__list">
+            <li class="buisness-tariff__item buisness-tariff__item--number buisness-tariff__item--first">
+              <p class="buisness-tariff__feature">Базовое размещение</p>
+              <p class="buisness-tariff__cost">Бесплатно</p>
+            </li>
+            <li class="buisness-tariff__item buisness-tariff__item--number buisness-tariff__item--second">
+              <p class="buisness-tariff__feature">Вывод на первых позициях</p>
+              <p class="buisness-tariff__cost">99 руб./мес</p>
+            </li>
+            <li class="buisness-tariff__item buisness-tariff__item--number buisness-tariff__item--third">
+              <p class="buisness-tariff__feature">Кастомный цвет карточки</p>
+              <p class="buisness-tariff__cost">59 руб./мес</p>
+            </li>
+          </ol>
+
+          <a class="buisness-tariff__open" href="buisness-tariff.html">
+            <svg class="buisness-tariff__svg" width="26" height="26">
+              <use xlink:href="#businessman"></use>
+            </svg>
+            Показать тарифы для бизнеса</a>
+        </div>
       </section>
 
     </main>
@@ -400,6 +404,30 @@
         </div>
       </div>
     </footer>
+
+    <section class="page-modal tariff visually-hidden">
+      <h2 class="tariff__title">Бизнес-тарифы</h2>
+      <ul class="tariff__price business-price">
+        <li class="business-price__item">
+          <span>Реклама у блоггера</span>
+          <span>300 000 руб./пост</span>
+        </li>
+        <li class="business-price__item">
+          <span>Накрутка подписчиков</span>
+          <span>от 1 руб./шт.</span>
+        </li>
+        <li class="business-price__item">
+          <span>Лайки от ботов</span>
+          <span>от 20 коп./лайк</span>
+        </li>
+        <li class="business-price__item">
+          <span>Ваш продакт-плейсмент</span>
+          <span>Индивидуально</span>
+        </li>
+      </ul>
+      <button class="tariff__close" type="button">Закрыть окно</button>
+    </section>
+
     <script src="js/main.min.js"></script>
   </body>
 </html>

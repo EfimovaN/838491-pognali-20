@@ -1,0 +1,127 @@
+.buisness-tariff {
+  margin-top: -55px;
+  padding: 88px 0 36px;
+  position: relative;
+  background-color: #e6e8f1;
+  border-radius: 0 0 30px 30px;
+  font: inherit;
+  z-index: 3;
+}
+
+.buisness-tariff__title {
+  position: relative;
+  padding: 0 95px 22px 25px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #ff8d30;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -16px;
+    right: 0;
+    background-image: url("../img/rates@1x.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/rates@2x.png");
+      background-size: 100px auto;
+    }
+  }
+}
+
+.buisness-tariff__list {
+  margin: 0;
+  padding: 0 0 29px 24px;
+  width: 225px;
+  list-style: none;
+}
+
+.buisness-tariff__item {
+  position: relative;
+  padding-top: 10px;
+  min-height: 65px;
+  border-bottom: 1px solid #e1e3e9;
+
+  &:first-child {
+    border-top: 1px solid #e1e3e9;
+  }
+
+  &:nth-child(2) {
+    min-height: 67px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 4px;
+    right: -45px;
+    background-color: #ff8d30;
+    border-radius: 50%;
+
+    // @media (min-width: $tablet-width) {
+    //   top: 90px;
+    //   right: 0;
+    //   left: 33px;
+    //   font-size: 30px;
+    // }
+
+    // @media (min-width: $desktop-width) {
+    //   top: 30px;
+    //   left: 268px;
+    //   font-size: 24px;
+    // }
+  }
+
+  &::before {
+    content: "1";
+    position: absolute;
+    top: 10px;
+    right: -32px;
+    font-size: 16px;
+    color: #ffffff;
+    z-index: 1;
+  }
+
+  &--first {
+    &::before {
+      content: "1";
+    }
+  }
+
+  &--second {
+    &::before {
+      content: "2";
+    }
+  }
+
+  &--third {
+    &::before {
+      content: "3";
+    }
+  }
+}
+
+.buisness-tariff__feature {
+  margin: 0;
+}
+
+.buisness-tariff__cost {
+  margin: 0;
+}
+
+.buisness-tariff__open {
+  margin: 0 0 0 24px;
+  padding: 0;
+  text-align: center;
+  font-weight: 700;
+  color: #132576;
+}
+
+.buisness-tariff__svg {
+  display: none;
+}
