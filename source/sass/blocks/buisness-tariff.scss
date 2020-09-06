@@ -6,6 +6,12 @@
   border-radius: 0 0 30px 30px;
   font: inherit;
   z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 83px;
+    background-color: #edeff6;
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 .buisness-tariff__title {
@@ -14,6 +20,13 @@
   font-size: 24px;
   line-height: 24px;
   color: #ff8d30;
+
+  @media (min-width: $tablet-width) {
+    padding: 4px 95px 36px 98px;
+    font-size: 45px;
+    line-height: 45px;
+    text-align: center;
+  }
 
   &::after {
     content: "";
@@ -29,6 +42,11 @@
       background-image: url("../img/rates@2x.png");
       background-size: 100px auto;
     }
+
+    @media (min-width: $tablet-width) {
+      top: 340px;
+      right: 45px;
+    }
   }
 }
 
@@ -37,6 +55,27 @@
   padding: 0 0 29px 24px;
   width: 225px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 2px 0 59px 90px;
+    width: 654px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 198px;
+      height: 285px;
+      top: 206px;
+      right: 40px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+      z-index: -1;
+    }
+  }
+
+
 }
 
 .buisness-tariff__item {
@@ -44,6 +83,16 @@
   padding-top: 10px;
   min-height: 65px;
   border-bottom: 1px solid #e1e3e9;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    line-height: 28px;
+    padding: 0;
+    margin: 0;
+  }
 
   &:first-child {
     border-top: 1px solid #e1e3e9;
@@ -63,12 +112,15 @@
     background-color: #ff8d30;
     border-radius: 50%;
 
-    // @media (min-width: $tablet-width) {
-    //   top: 90px;
-    //   right: 0;
-    //   left: 33px;
-    //   font-size: 30px;
-    // }
+    @media (min-width: $tablet-width) {
+      width: 68px;
+      height: 68px;
+      top: -3px;
+      right: 0;
+      left: -90px;
+      font-size: 28px;
+      line-height: 28px;
+    }
 
     // @media (min-width: $desktop-width) {
     //   top: 30px;
@@ -85,6 +137,12 @@
     font-size: 16px;
     color: #ffffff;
     z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      font-size: 28px;
+      top: 18px;
+      left: -63px;
+    }
   }
 
   &--first {
@@ -115,13 +173,41 @@
 }
 
 .buisness-tariff__open {
+  position: relative;
   margin: 0 0 0 24px;
   padding: 0;
   text-align: center;
   font-weight: 700;
   color: #132576;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 65px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 68px;
+      height: 68px;
+      top: -25px;
+      left: -24px;
+      border-radius: 50%;
+      background-color: #e2e5f2;
+    }
+  }
 }
 
 .buisness-tariff__svg {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    display: inline-block;
+    top: -3px;
+    left: -1px;
+    color: #132576;
+  }
 }
