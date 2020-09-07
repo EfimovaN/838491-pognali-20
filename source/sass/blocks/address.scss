@@ -1,0 +1,44 @@
+.address {
+  position: relative;
+  margin-top: -50px;
+  padding: 83px 0 35px;
+  font: inherit;
+  font-weight: 700;
+  color: #1D2E5B;
+  background-color: #ffd74b;
+  border-radius: 0 0 30px 30px;
+  z-index: 1;
+}
+
+.address__contact {
+  padding: 0 0 32px 61px;
+  position: relative;
+  font-style: normal;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: -2px;
+    left: 0;
+    border-radius: 50%;
+    background-color: #121936;
+  }
+}
+
+.address__svg {
+  position: absolute;
+  display: block;
+  top: 10px;
+  left: 14px;
+  color: #ffd74b;
+
+}
+
+.address__route {
+  padding: 19px 45px 19px 20px;
+  color: #1D2E5B;
+  border: 3px solid #192144;
+}
