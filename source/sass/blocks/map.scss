@@ -1,0 +1,17 @@
+.map {
+  position: relative;
+  margin-top: -50px;
+  min-height: 363px;
+  background-color: #ededee;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.map__img iframe {
+  left: 0;
+  top: 9%;
+  height: 82%;
+  width: 100%;
+  position: absolute;
+  border: 0;
+}
