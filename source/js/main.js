@@ -1,3 +1,5 @@
+// Menu
+
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 var pageHeader = document.querySelector('.page-header');
@@ -29,3 +31,29 @@ navToggle.addEventListener('click', function() {
     logoBlue.classList.toggle('logo__image--hidden');
   }
 });
+
+// Modal
+
+var buisnessTariff = document.querySelector('.buisness-tariff__open');
+var tariffOpen = document.querySelector('.tariff');
+var tariffClose = document.querySelector('.tariff__close');
+
+buisnessTariff.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  tariffOpen.classList.add('tariff--opened');
+});
+
+tariffClose.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  tariffOpen.classList.remove('tariff--opened');
+});
+
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    if (tariffOpen.classList.contains('tariff--opened')) {
+      evt.preventDefault();
+      tariffOpen.classList.remove('tariff--opened');
+    }
+  }
+});
+
