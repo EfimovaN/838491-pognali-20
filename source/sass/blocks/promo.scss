@@ -38,6 +38,8 @@
 }
 
 .promo .container {
+  position: relative;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: auto 480px 300px;

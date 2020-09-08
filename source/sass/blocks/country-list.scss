@@ -28,10 +28,30 @@
       left: -1px;
       background-color: #e2e5f2;
       border-radius: 20px;
+    }
 
-      @media (min-width: $desktop-width) {
-        top: -70px;
-      }
+    @media (min-width: $desktop-width) {
+      top: -70px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 617px;
+      height: 94px;
+      bottom: 0;
+      left: 35px;
+      background: linear-gradient(180deg, transparent, #ffffff); 
+      border-radius: 0 0 20px 20px;
+      z-index: 5;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 560px;
+      height: 81px;
+      left: 70px;
     }
   }
 }
