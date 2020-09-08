@@ -1,0 +1,11 @@
+.page .page-header--closed {
+  background-color: #182044;
+}
+
+.page .page-header--opened {
+  background-color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    background-color: #182044;
+  }
+}
