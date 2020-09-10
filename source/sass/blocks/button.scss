@@ -43,7 +43,6 @@
       font-size: 20px;
       line-height: 20px;
       padding: 16px 0 14px;
-      
     }
 
     // &:hover,
@@ -54,6 +53,18 @@
     // &:active {
     //   color: fade-out(#444444, 0.7);
     // }
+  }
+
+  &--country {
+    text-align: center;
+    padding: 12px 20px 10px 45px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    text-transform: uppercase;
+
+
+
   }
 
   &--triangle {

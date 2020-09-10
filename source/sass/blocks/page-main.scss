@@ -5,11 +5,13 @@
 }
 
 .page-main__top-title {
+  position: relative;
   min-height: 70px;
   padding: 23px 0 0;
   color: #ffffff;
   background-color: #182044;
   border-radius: 0 0 20px 20px;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     min-height: 218px;
@@ -22,16 +24,16 @@
   }
 }
 
-.page-main .container {
+.page-main__top-title .container {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 96px 0 74px;
+    padding: 0 134px 0 74px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 145px 0 126px;
+    padding: 0 184px 0 126px;
   }
 }
 
@@ -84,10 +86,8 @@
     width: 32px;
     height: 16px;
     bottom: 2px;
-    right: -22px;
+    right: -60px;
     background-image: url("../img/return.svg");
     background-repeat: no-repeat;
   }
-
-
 }

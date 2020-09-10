@@ -1,0 +1,58 @@
+.alphabet {
+  display: grid;
+  grid-template-columns: repeat(5, 43px);
+  grid-template-rows: repeat(5, 40px);
+  gap: 1px;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(5, 70px);
+    grid-template-rows: repeat(5, 76px);
+    gap: 7px;
+    
+  }
+
+}
+
+.alphabet__letter {
+  width: 43px;
+  height: 40px;
+  background-color: #ffffff;
+  // border: 1px solid #cbced9;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 43px;
+    height: 40px;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    background-color: transparent;
+    color: #192144;
+    opacity: 0.3;
+  }
+
+  &--active {
+    position: relative;
+    width: 44px;
+    background-color: #1d2e5b;
+    color: #ffffff;
+    z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      color: #192144;
+      background-color: transparent;
+    }
+  }
+}
+
+.alphabet__group-country {
+  margin: 0;
+  list-style: none;
+
+  &--desktop {
+    display: none;
+  }
+}
+
