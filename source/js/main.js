@@ -32,28 +32,57 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-// Modal
+// // Modal
 
-var buisnessTariff = document.querySelector('.buisness-tariff__open');
-var tariffOpen = document.querySelector('.tariff');
-var tariffClose = document.querySelector('.tariff__close');
+// var buisnessTariff = document.querySelector('.buisness-tariff__open');
+// var tariffOpen = document.querySelector('.tariff');
+// var tariffClose = document.querySelector('.tariff__close');
 
-buisnessTariff.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  tariffOpen.classList.add('tariff--opened');
-});
+// buisnessTariff.addEventListener('click', function (evt) {
+//   evt.preventDefault();
+//   tariffOpen.classList.add('tariff--opened');
+// });
 
-tariffClose.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  tariffOpen.classList.remove('tariff--opened');
-});
+// tariffClose.addEventListener('click', function (evt) {
+//   evt.preventDefault();
+//   tariffOpen.classList.remove('tariff--opened');
+// });
 
-window.addEventListener('keydown', function (evt) {
-  if (evt.keyCode === 27) {
-    if (tariffOpen.classList.contains('tariff--opened')) {
-      evt.preventDefault();
-      tariffOpen.classList.remove('tariff--opened');
-    }
+// window.addEventListener('keydown', function (evt) {
+//   if (evt.keyCode === 27) {
+//     if (tariffOpen.classList.contains('tariff--opened')) {
+//       evt.preventDefault();
+//       tariffOpen.classList.remove('tariff--opened');
+//     }
+//   }
+// });
+
+
+// Filter
+
+var filterCountry = document.querySelector('.filter-country');
+var filterToggle = document.querySelector('.filter-country__toggle');
+var filterUnwrap = document.querySelector('.filter-country__unwrap');
+
+filterCountry.classList.remove('filter-country--opened');
+filterCountry.classList.add('filter-country--closed');
+
+filterToggle.addEventListener('click', function() {
+  if (filterCountry.classList.contains('filter-country--closed')) {
+    filterCountry.classList.remove('filter-country--closed');
+    filterCountry.classList.add('filter-country--opened');
+  } else {
+    filterCountry.classList.remove('filter-country--opened');
+    filterCountry.classList.add('filter-country--closed');
   }
 });
 
+filterUnwrap.addEventListener('click', function() {
+  if (filterCountry.classList.contains('filter-country--closed')) {
+    filterCountry.classList.remove('filter-country--closed');
+    filterCountry.classList.add('filter-country--opened');
+  } else {
+    filterCountry.classList.remove('filter-country--opened');
+    filterCountry.classList.add('filter-country--closed');
+  }
+});
