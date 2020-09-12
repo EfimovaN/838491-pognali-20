@@ -32,7 +32,7 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-// // Modal
+// Modal
 
 // var buisnessTariff = document.querySelector('.buisness-tariff__open');
 // var tariffOpen = document.querySelector('.tariff');

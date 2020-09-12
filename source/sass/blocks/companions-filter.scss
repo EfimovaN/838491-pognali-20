@@ -1,0 +1,12 @@
+.companions-filter {
+  padding-top: 76px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 182px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 32px;
+  }
+
+}

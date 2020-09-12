@@ -1,6 +1,8 @@
 .filter-country {
+  width: 100%;
   margin-top: -35px;
-  position: relative;
+  position: absolute;
+  top: 34px;
   color: #192144;
   background-color: #e2e5f2;
   border-radius: 0 0 20px 20px;
@@ -12,6 +14,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     background-color: #edeff6;
     border-radius: 0;
   }

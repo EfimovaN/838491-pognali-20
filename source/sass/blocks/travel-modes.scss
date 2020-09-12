@@ -1,0 +1,227 @@
+.travel-modes {
+  display: flex;
+  padding: 0;
+  list-style: none;
+
+  &--catalog-filter {
+    display: none;
+    margin: 0 0 0 1px;
+    padding: 5px 0 19px;
+
+    .travel-modes__checkbox:focus ~ .travel-modes__round {
+      z-index: 10;
+      box-shadow: 0 2px 10px 0 fade_out(#000000, 1 - 0.38);
+    }
+
+    .travel-modes__item {
+      margin: 0 0 0 -1px;
+
+      @media (min-width: $tablet-width) {
+        margin: 0;
+      }
+    }
+
+    .travel-modes__label {
+      width: 33px;
+      height: 33px;
+      border-radius: 50%;
+
+      @media (min-width: $tablet-width) {
+        width: 43px;
+        height: 43px;
+      }
+
+      &:hover .travel-modes__round {
+        z-index: 10;
+        box-shadow: 0 2px 10px 0 fade_out(#000000, 1 - 0.08);
+      }
+
+      &:active .travel-modes__round {
+        background-color: #e2e5f1;
+        box-shadow: none;
+      }
+
+      &:hover .travel-modes__img {
+        z-index: 11;
+        fill: fade-out(#000000, 1 - 0.3);
+      }
+
+      &:active .travel-modes__img {
+        z-index: 11;
+        fill: fade-out(#000000, 1 - 0.1);
+      }
+
+      &:hover .travel-modes__checkbox:checked ~ .travel-modes__img {
+        fill: #101e44;
+      }
+
+      &:active .travel-modes__checkbox:checked ~ .travel-modes__img {
+        fill: fade_out(#101e44, 1 - 0.3);
+      }
+    }
+
+    .travel-modes__round {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+
+    .travel-modes__img {
+      position: absolute;
+      z-index: 11;
+      margin: 0;
+      transition: 0.3s;
+
+      &--plane {
+        left: 8px;
+        top: 8px;
+        width: 14px;
+        height: 16px;
+
+        @media (min-width: $tablet-width) {
+          left: 10px;
+          top: 11px;
+          width: 19px;
+          height: 21px;
+        }
+      }
+
+      &--bus {
+        left: 10px;
+        top: 8px;
+        width: 13px;
+        height: 16px;
+
+        @media (min-width: $tablet-width) {
+          left: 13px;
+          top: 11px;
+          width: 17px;
+          height: 21px;
+        }
+      }
+
+      &--bike {
+        left: 7px;
+        top: 7px;
+        width: 19px;
+        height: 17px;
+
+        @media (min-width: $tablet-width) {
+          left: 9px;
+          top: 10px;
+          width: 24px;
+          height: 21px;      }
+      }
+
+      &--run {
+        left: 9px;
+        top: 8px;
+        width: 15px;
+        height: 17px;
+
+        @media (min-width: $tablet-width) {
+          left: 11px;
+          top: 11px;
+          width: 20px;
+          height: 21px;
+        }
+      }
+    }
+  }
+}
+
+.main-filter__set--active .travel-modes--catalog-filter {
+  display: flex;
+}
+
+.travel-modes__label {
+  position: relative;
+  display: block;
+}
+
+.travel-modes__checkbox:checked ~ .travel-modes__img {
+  fill: #1d2e5b;
+}
+
+.travel-modes__img {
+  display: block;
+  fill: fade-out(#000000, 1 - 0.15);
+
+  &--plane {
+    width: 19px;
+    height: 21px;
+  }
+
+  &--bus {
+    width: 17px;
+    height: 21px;
+  }
+
+  &--bike {
+    width: 24px;
+    height: 21px;
+  }
+
+  &--run {
+    width: 20px;
+    height: 21px;
+  }
+}
+
+.travel-modes__text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.travel-modes__label:hover .travel-modes__text {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  white-space: normal;
+  clip-path: none;
+  clip: auto;
+  overflow: visible;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: -72px;
+  transform: translateX(-50%);
+  min-height: 57px;
+  padding: 17px 21px 16px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: none;
+  white-space: nowrap;
+  text-align: center;
+  color: #ffffff;
+  background-color: #101d41;
+  border-radius: 4px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: calc(50% - 7px);
+    top: -6px;
+    width: 14px;
+    height: 14px;
+    background-color: #101d41;
+    transform-origin: center center;
+    transform: rotate(45deg);
+    border-radius: 1.5px 0 0 0;
+  }
+}

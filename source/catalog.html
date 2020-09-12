@@ -187,7 +187,7 @@
               <button class="alphabet__letter" type="button">Б</button>
               <ul class="alphabet__group-country alphabet__group-country--desktop">
                 <li class="alphabet__country">
-                  <a class="alphabet__country-link" href="/islands/bahamas">Багамские Острова</a>
+                  <a class="alphabet__country-link" href="#">Багамские Острова</a>
                 </li>
                 <li class="alphabet__country">
                   <a class="alphabet__country-link" href="#">Бангладеш</a>
@@ -821,6 +821,305 @@
           <button class="filter-country__unwrap filter-country__unwrap--hidden button button--country">Свернуть</button>
         </div>
       </section>
+      
+      <div class="companions-filter companions-filter--wrap">
+        <div class="container">
+
+          <form class="main-filter" action="https://echo.htmlacademy.ru">
+            <h2 class="main-filter__title">Подберите идеального попутчика</h2>
+            <fieldset class="main-filter__set main-filter__set--hobby main-filter__set--active">
+              <div class="main-filter__container">
+                <h3 class="main-filter__legend">
+                  <button class="main-filter__toggle" type="button">
+                    <span class="visually-hidden">Переключатель - показать, скрыть.</span>
+                  </button>
+                  <span class="main-filter__legend-text">
+                    <span class="main-filter__legend-text1">Хобби</span>
+                    <span class="main-filter__legend-text2">:</span>
+                  </span>
+                </h3>
+                <p class="main-filter__wrap main-filter__wrap--checkbox">
+                  <label class="main-filter__label">
+                    <input class="main-filter__checkbox visually-hidden" type="checkbox" checked>
+                    <span class="main-filter__label-text">Спортзал</span>
+                  </label>
+                  <label class="main-filter__label">
+                    <input class="main-filter__checkbox visually-hidden" type="checkbox">
+                    <span class="main-filter__label-text">Кальян</span>
+                  </label>
+                  <label class="main-filter__label">
+                    <input class="main-filter__checkbox visually-hidden" type="checkbox">
+                    <span class="main-filter__label-text">Диван</span>
+                  </label>
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="main-filter__set main-filter__set--music main-filter__set--active">
+              <div class="main-filter__container">
+                <h3 class="main-filter__legend">
+                  <button class="main-filter__toggle" type="button">
+                    <span class="visually-hidden">Переключатель - показать, скрыть.</span>
+                  </button>
+                  <span class="main-filter__legend-text">
+                    <span class="main-filter__legend-text1">Музыка</span>
+                    <span class="main-filter__legend-text2">:</span>
+                  </span>
+                </h3>
+                <p class="main-filter__wrap main-filter__wrap--checkbox">
+                  <label class="main-filter__label">
+                    <input class="main-filter__checkbox visually-hidden" type="checkbox" checked>
+                    <span class="main-filter__label-text">Тяжелый рок</span>
+                  </label>
+                  <label class="main-filter__label">
+                    <input class="main-filter__checkbox visually-hidden" type="checkbox">
+                    <span class="main-filter__label-text">Русский рэп</span>
+                  </label>
+                  <label class="main-filter__label">
+                    <input class="main-filter__checkbox visually-hidden" type="checkbox">
+                    <span class="main-filter__label-text">Евроденс</span>
+                  </label>
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="main-filter__set main-filter__set--food main-filter__set--active">
+              <div class="main-filter__container">
+                <h3 class="main-filter__legend">
+                  <button class="main-filter__toggle" type="button">
+                    <span class="visually-hidden">Переключатель - показать, скрыть.</span>
+                  </button>
+                  <span class="main-filter__legend-text">
+                    <span class="main-filter__legend-text1">Еда</span>
+                    <span class="main-filter__legend-text2">:</span>
+                  </span>
+                </h3>
+                <p class="main-filter__wrap main-filter__wrap--checkbox">
+                  <label class="main-filter__label">
+                    <input class="main-filter__checkbox visually-hidden" type="checkbox" checked>
+                    <span class="main-filter__label-text">Мясоед</span>
+                  </label>
+                  <label class="main-filter__label">
+                    <input class="main-filter__checkbox visually-hidden" type="checkbox">
+                    <span class="main-filter__label-text">Сидит на ПП</span>
+                  </label>
+                  <label class="main-filter__label">
+                    <input class="main-filter__checkbox visually-hidden" type="checkbox">
+                    <span class="main-filter__label-text">Веган-сыроед</span>
+                  </label>
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="main-filter__set main-filter__set--transport main-filter__set--active">
+              <div class="main-filter__container">
+                <h3 class="main-filter__legend">
+                  <button class="main-filter__toggle" type="button">
+                    <span class="visually-hidden">Переключатель - показать, скрыть.</span>
+                  </button>
+                  <span class="main-filter__legend-text">
+                    <span class="main-filter__legend-text1">Транспорт</span>
+                    <span class="main-filter__legend-text2">:</span>
+                  </span>
+                </h3>
+                <ul class="main-filter__wrap main-filter__wrap--travel-modes travel-modes travel-modes--catalog-filter">
+                  <li class="travel-modes__item travel-modes__item--plane">
+                    <label class="travel-modes__label">
+                      <input class="visually-hidden travel-modes__checkbox"
+                        type="checkbox" checked>
+                      <span class="travel-modes__round"></span>
+                      <svg class="travel-modes__img travel-modes__img--plane" width="14" height="16">
+                        <use xlink:href="img/sprite.svg#icon-plane"></use>
+                      </svg>
+                      <span class="travel-modes__text">Авиаперелет</span>
+                    </label>
+                  </li>
+                  <li class="travel-modes__item travel-modes__item--bus">
+                    <label class="travel-modes__label">
+                      <input class="visually-hidden travel-modes__checkbox"
+                        type="checkbox" checked>
+                      <span class="travel-modes__round"></span>
+                      <svg class="travel-modes__img travel-modes__img--bus" width="13" height="16">
+                        <use xlink:href="img/sprite.svg#icon-bus"></use>
+                      </svg>
+                      <span class="travel-modes__text">Автотранспорт</span>
+                    </label>
+                  </li>
+                  <li class="travel-modes__item travel-modes__item--bike">
+                    <label class="travel-modes__label">
+                      <input class="visually-hidden travel-modes__checkbox"
+                        type="checkbox">
+                      <span class="travel-modes__round"></span>
+                      <svg class="travel-modes__img travel-modes__img--bike" width="19" height="17">
+                        <use xlink:href="img/sprite.svg#icon-bike"></use>
+
+                      </svg>
+                      <span class="travel-modes__text">Велосипед</span>
+                    </label>
+                  </li>
+                  <li class="travel-modes__item travel-modes__item--run">
+                    <label class="travel-modes__label">
+                      <input class="visually-hidden travel-modes__checkbox"
+                        type="checkbox" checked>
+                      <span class="travel-modes__round"></span>
+                      <svg class="travel-modes__img travel-modes__img--run" width="15" height="17">
+                        <use xlink:href="img/sprite.svg#icon-run"></use>
+                      </svg>
+                      <span class="travel-modes__text">Пешком</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset class="main-filter__set main-filter__set--level main-filter__set--active">
+              <div class="main-filter__container">
+                <h3 class="main-filter__legend">
+                  <button class="main-filter__toggle" type="button">
+                    <span class="visually-hidden">Переключатель - показать, скрыть.</span>
+                  </button>
+                  <span class="main-filter__legend-text">
+                    <span class="main-filter__legend-text1">Левел</span>
+                    <span class="main-filter__legend-text2">:</span>
+                  </span>
+                </h3>
+                <div class="main-filter__wrap main-filter__wrap--level level-filter">
+                  <div class="level-filter__wrap">
+                    <label class="level-filter__label level-filter__label--from">
+                      <span class="visually-hidden">От</span>
+                      <input class="level-filter__input level-filter__input--from" type="text" value="30">
+                    </label>
+                    <label class="level-filter__label level-filter__label--to">
+                      <span class="visually-hidden">До</span>
+                      <input class="level-filter__input level-filter__input--to" type="text" value="100">
+                    </label>
+                  </div>
+                  <div class="level-filter__range-controls">
+                    <div class="level-filter__scale">
+                      <div class="level-filter__bar"></div>
+                    </div>
+                    <div class="level-filter__toggle level-filter__toggle--min"></div>
+                    <div class="level-filter__toggle level-filter__toggle--max"></div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <button class="button button--main-filter" type="submit">Показать</button>
+          </form>
+
+          <section class="companions companions--catalog visually-hidden">
+            <h2 class="visually-hidden">Каталог попутчиков</h2>
+            <ul class="companions__list user-list">
+              <li class="user-list__item">
+                <h3 class="user-list__title">
+                  <a class="user-list__profile-link user-list__profile-link--busy" href="user-Firsova-Tatiana.html">Таня Фирсова</a>
+                </h3>
+                <div class="user-list__wrapper">
+                  <picture>
+                    <source type="image/webp" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+                    <img class="user-list__image" src="img/firsova-desktop@1x.jpg" srcset="img/firsova-desktop@2x.jpg" alt="Таня Фирсова">
+                  </picture>
+                </div>
+  
+                <ul class="user-list__routes routes">
+                  <li class="routes__item routes__item--sri-lanka"></li>
+                  <li class="routes__item routes__item--thailand"></li>
+                  <li class="routes__item routes__item--seychelles"></li>
+                </ul>
+                <ul class="user-list__tags tags">
+                  <li class="tags__item">#ЗОЖ</li>
+                  <li class="tags__item">#ПП</li>
+                  <li class="tags__item">#Фитнес</li>
+                  <li class="tags__item">#пляж</li>
+                  <li class="tags__item">#авокадо</li>
+                  <li class="tags__item">#смузи</li>
+                </ul>
+                <ul class="user-list__transport transport">
+                  <li class="transport__item transport__item--active">
+                      <svg class="transport__icon transport__icon--airplane" role="img" width="17" height="22">
+                        <use xlink:href="img/sprite.svg#icon-plane"></use>
+                      </svg>
+                  </li>
+                  <li class="transport__item">
+                      <svg class="transport__icon transport__icon--bus" role="img" width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-bus"></use>
+                      </svg>
+                  </li>
+                  <li class="transport__item">
+                      <svg class="transport__icon transport__icon--bicycle" role="img" width="20" height="24">
+                        <use xlink:href="img/sprite.svg#icon-bike"></use>
+                      </svg>
+                  </li>
+                  <li class="transport__item">
+                      <svg class="transport__icon transport__icon--hiking" role="img" width="20" height="18">
+                        <use xlink:href="img/sprite.svg#icon-run"></use>
+                      </svg>
+                  </li>
+                </ul>
+                <div class="user-list__user-level user-level">
+                  <span class="user-level__number">99</span>
+                  <span class="user-level__text">level</span>
+                </div>
+              </li>
+  
+              <li class="user-list__item">
+                <h3 class="user-list__title">
+                  <a class="user-list__profile-link user-list__profile-link--ready" href="user-Demin-Petya.html">Петя Демин</a>
+                </h3>
+                <div class="user-list__wrapper">
+                  <picture>
+                    <source type="image/webp" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                    <img class="user-list__image" src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg" alt="Петя Демин">
+                  </picture>
+                </div>
+                <ul class="user-list__routes routes">
+                  <li class="routes__item routes__item--belgium"></li>
+                  <li class="routes__item routes__item--czech"></li>
+                </ul>
+                <ul class="user-list__tags tags">
+                  <li class="tags__item">#бургер</li>
+                  <li class="tags__item">#бар</li>
+                  <li class="tags__item">#футбол</li>
+                  <li class="tags__item">#концерт</li>
+                  <li class="tags__item">#крафт</li>
+                </ul>
+                <ul class="user-list__transport transport">
+                  <li class="transport__item transport__item--active">
+                      <svg class="transport__icon transport__icon--airplane" role="img" width="17" height="22">
+                        <use xlink:href="img/sprite.svg#icon-plane"></use>
+                      </svg>
+                  </li>
+                  <li class="transport__item transport__item--active">
+                      <svg class="transport__icon transport__icon--bus" role="img" width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-bus"></use>
+                      </svg>
+                  </li>
+                  <li class="transport__item">
+                      <svg class="transport__icon transport__icon--bicycle" role="img" width="20" height="24">
+                        <use xlink:href="img/sprite.svg#icon-bike"></use>
+                      </svg>
+                  </li>
+                  <li class="transport__item transport__item--active">
+                      <svg class="transport__icon transport__icon--hiking" role="img" width="20" height="18">
+                        <use xlink:href="img/sprite.svg#icon-run"></use>
+                      </svg>
+                  </li>
+                </ul>
+                <div class="user-list__user-level user-level">
+                  <span class="user-level__number">80</span>
+                  <span class="user-level__text">level</span>
+                </div>
+              </li>
+            </ul>
+
+          </section>
+        </div>
+      </div>
+        
+  
+
+
+      
+
+
+
+
 
       
 
