@@ -161,14 +161,12 @@
     height: 13px;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
-    &--min {
+  &--min {
+    left: 30.5%;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
       left: 24.3%;
     }
-  }
-
-  &--min {
-    left: 24.5%;
   }
 
   &--max {
