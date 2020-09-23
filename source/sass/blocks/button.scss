@@ -62,9 +62,6 @@
     letter-spacing: 1px;
     border-radius: 25px;
     text-transform: uppercase;
-
-
-
   }
 
   &--triangle {
@@ -87,5 +84,24 @@
         right: 35px;
       }
     }
+  }
+
+  &--main-filter {
+    margin: 0 -5px;
+    text-align: center;
+    padding: 13px 20px 11px;
+    font-size: 17px;
+    line-height: 17px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+      margin: 0;
+      padding: 17px 20px 13px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
   }
 }

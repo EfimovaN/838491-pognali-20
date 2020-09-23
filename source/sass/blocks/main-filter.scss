@@ -5,11 +5,10 @@
   padding: 25px 25px 22px;
   border-radius: 20px;
   background-color: #ffd74b;
-  // overflow: hidden;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1){
     margin: 0;
-    padding: 34px 35px 38px;
+    padding: 34px 35px 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,14 +27,11 @@
   letter-spacing: 0.02em;
   color: #1d2e5b;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1){
+    padding: 3px 0 45px;
     font-size: 30px;
     line-height: 30px;
-  }
-
-  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
-    margin: 0 0 31px -1px;
-    padding: 0 0 39px;
+    letter-spacing: 0;
     border-bottom: 1px solid #f3c72b;
   }
 
@@ -67,7 +63,7 @@
   }
 
   &--level {
-    margin: 0 0 12px;
+    margin: 0 0 11px;
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
       margin: 0 0 36px;
@@ -84,10 +80,11 @@
 }
 
 .main-filter__container {
+  
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     display: flex;
   }
-}
+} 
 
 .main-filter__legend {
   position: relative;
@@ -111,7 +108,7 @@
 
 .main-filter__toggle {
   position: relative;
-  z-index: 1;
+  // z-index: 1;
   display: block;
   width: 100%;
   height: 100%;
@@ -225,14 +222,14 @@
     flex-direction: column;
     padding: 4px 0 8px;
 
-    // @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
-    //   display: flex;
-    //   flex-direction: row;
-    //   flex-wrap: wrap;
-    //   width: 511px;
-    //   margin: 0 0 15px;
-    //   padding: 4px 0 0;
-    // }
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 511px;
+      margin: 0 0 15px;
+      padding: 4px 0 0;
+    }
   }
 
   &--travel-modes {
@@ -248,8 +245,8 @@
   }
 
   &--level {
-    display: none;
-    padding: 2px 0 0;
+    // display: none;
+    // padding: 2px 0 0;
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
       display: flex;
@@ -267,9 +264,8 @@
   }
 }
 
-.main-filter__set--active .main-filter__wrap--level {
+.main-filter__set--active .main-filter__wrap {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .main-filter__label {
@@ -378,8 +374,12 @@
 
 .main-filter__checkbox:focus + .main-filter__label-text::before {
   background-color: fade_out(#ffffff, 1 - 0.5);
-} 
+}
 
+.main-filter__set--active .main-filter__wrap--level {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .main-filter__show {
   display: block;

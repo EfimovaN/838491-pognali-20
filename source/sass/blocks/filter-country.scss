@@ -2,11 +2,11 @@
   width: 100%;
   margin-top: -35px;
   position: absolute;
-  top: 34px;
+  // top: 34px;
   color: #192144;
   background-color: #e2e5f2;
   border-radius: 0 0 20px 20px;
-  z-index: 1;
+  z-index: 3;
 
   @media (min-width: $tablet-width) {
     margin-top: -55px;
