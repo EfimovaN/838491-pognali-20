@@ -1,0 +1,133 @@
+.user-card {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+  line-height: 18px;
+
+ 
+}
+
+.user-card__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  border-radius: 20px;
+  min-height: 415px;
+  overflow: hidden;
+}
+
+.user-card__title {
+  position: relative;
+  margin: 15px 42px 0 104px;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.user-card__profile-link {
+  color: #1d2e5b;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 8px;
+    right: -20px;
+    border-radius: 50%;
+    background-color: #81e31e;
+
+    @media (min-width: $tablet-width) {
+      width: 8px;
+      height: 8px;
+      right: 23px;
+    }
+  }
+
+  &--busy {
+    &::before {
+      background-color: #f97676;
+    }
+  }
+}
+
+.user-card__image {
+  position: absolute;
+  top: 17px;
+  left: 18px;
+  border-radius: 50%;
+}
+
+.user-card__likes {
+  position: relative;
+  margin: 0;
+  padding: 8px 0 20px 104px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 69px;
+    border-radius: 50%;
+    background-color: #F9EAEA;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 11px;
+    top: 9px;
+    left: 77px;
+    background-image: url("../img/heart.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--active {
+    &::after {
+      width: 13px;
+      height: 11px;
+      background-image: url("../img/heart-active.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.user-card__tags {
+  padding: 0 35px 12px 26px;
+  justify-content: left;
+  list-style: none;
+  text-align: left;
+
+}
+.user-card__tags .tags__item {
+  margin: 0 5px 0 0;
+}
+
+.user-card__text {
+  margin: 0;
+  padding: 0 26px;
+}
+
+.user-card__route {
+  margin: 17px 0 8px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.user-card__transport {
+  list-style: none;
+
+
+}
+

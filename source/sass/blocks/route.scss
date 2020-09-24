@@ -1,0 +1,40 @@
+.route__item {
+  margin: 3px 0 5px 25px;
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  background-size: 26px 18px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  color: #1d2e5b;
+  text-transform: uppercase;
+
+
+  &--sri-lanka {
+    background-image: url("../img/flag-sri-lanka.svg");
+
+  }
+
+  &--thailand {
+    background-image: url("../img/flag-thailand.svg");
+  }
+
+  &--seychelles {
+    background-image: url("../img/flag-seychelles.svg");
+  }
+
+  &--belgium {
+    background-image: url("../img/flag-belgium.svg");
+  }
+
+  &--czech {
+    background-image: url("../img/flag-czech.svg");
+  }
+
+}
+
+.route__country {
+  margin: 0;
+  padding: 2px 0 0;
+  vertical-align: bottom;
+}

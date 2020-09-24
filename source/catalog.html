@@ -1003,26 +1003,25 @@
             <button class="button button--main-filter" type="submit">Показать</button>
           </form>
 
-          <section class="companions companions--catalog visually-hidden">
+          <section class="companions-filtered">
             <h2 class="visually-hidden">Каталог попутчиков</h2>
-            <ul class="companions__list user-list">
-              <li class="user-list__item">
-                <h3 class="user-list__title">
-                  <a class="user-list__profile-link user-list__profile-link--busy" href="user-Firsova-Tatiana.html">Таня Фирсова</a>
+            <ul class="companions-filtered__list user-card">
+              <li class="user-card__item">
+                <h3 class="user-card__title">
+                  <a class="user-card__profile-link user-card__profile-link--busy" href="user-Firsova-Tatiana.html">Таня Фирсова</a>
                 </h3>
-                <div class="user-list__wrapper">
+                <div class="user-card__wrapper">
                   <picture>
-                    <source type="image/webp" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
-                    <img class="user-list__image" src="img/firsova-desktop@1x.jpg" srcset="img/firsova-desktop@2x.jpg" alt="Таня Фирсова">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                    <img class="user-card__image" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg" alt="Таня Фирсова">
                   </picture>
                 </div>
-  
-                <ul class="user-list__routes routes">
-                  <li class="routes__item routes__item--sri-lanka"></li>
-                  <li class="routes__item routes__item--thailand"></li>
-                  <li class="routes__item routes__item--seychelles"></li>
-                </ul>
-                <ul class="user-list__tags tags">
+                <p class="user-card__likes user-card__likes--active">1,5 М</p>
+                <ul class="user-card__tags tags">
                   <li class="tags__item">#ЗОЖ</li>
                   <li class="tags__item">#ПП</li>
                   <li class="tags__item">#Фитнес</li>
@@ -1030,7 +1029,20 @@
                   <li class="tags__item">#авокадо</li>
                   <li class="tags__item">#смузи</li>
                 </ul>
-                <ul class="user-list__transport transport">
+                <p class="user-card__text">хочет посетить:</p>
+                <ul class="user-card__route route">
+                  <li class="route__item route__item--sri-lanka">
+                    <p class="route__country">Шри-Ланка</p>
+                  </li>
+                  <li class="route__item route__item--thailand">
+                    <p class="route__country">Таиланд</p>
+                   </li>
+                  <li class="route__item route__item--seychelles">
+                    <p class="route__country">Сейшелы</p>
+                  </li>
+                </ul>
+                <p class="user-card__text">транспорт:</p>
+                <ul class="user-card__transport transport">
                   <li class="transport__item transport__item--active">
                       <svg class="transport__icon transport__icon--airplane" role="img" width="17" height="22">
                         <use xlink:href="img/sprite.svg#icon-plane"></use>
@@ -1052,34 +1064,43 @@
                       </svg>
                   </li>
                 </ul>
-                <div class="user-list__user-level user-level">
+                <p class="user-card__text">левел:</p>
+                <div class="user-card__user-level user-level">
                   <span class="user-level__number">99</span>
                   <span class="user-level__text">level</span>
                 </div>
+                <a class="user-card__button button" href="#">Позвать</a>
               </li>
   
-              <li class="user-list__item">
-                <h3 class="user-list__title">
-                  <a class="user-list__profile-link user-list__profile-link--ready" href="user-Demin-Petya.html">Петя Демин</a>
+              <li class="user-card__item">
+                <h3 class="user-card__title">
+                  <a class="user-card__profile-link user-card__profile-link--ready" href="user-Demin-Petya.html">Петя Демин</a>
                 </h3>
-                <div class="user-list__wrapper">
+                <div class="user-card__wrapper">
                   <picture>
-                    <source type="image/webp" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
-                    <img class="user-list__image" src="img/demin-desktop@1x.jpg" srcset="img/demin-desktop@2x.jpg" alt="Петя Демин">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                    <img class="user-card__image" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg" alt="Петя Демин">
                   </picture>
                 </div>
-                <ul class="user-list__routes routes">
-                  <li class="routes__item routes__item--belgium"></li>
-                  <li class="routes__item routes__item--czech"></li>
-                </ul>
-                <ul class="user-list__tags tags">
+                <p class="user-card__likes">1500</p>
+                <ul class="user-card__tags tags">
                   <li class="tags__item">#бургер</li>
                   <li class="tags__item">#бар</li>
                   <li class="tags__item">#футбол</li>
                   <li class="tags__item">#концерт</li>
                   <li class="tags__item">#крафт</li>
                 </ul>
-                <ul class="user-list__transport transport">
+                <p class="user-card__text">хочет посетить:</p>
+                <ul class="user-card__route route">
+                  <li class="route__item route__item--belgium">Бельгия</li>
+                  <li class="route__item route__item--czech">Чехия</li>
+                </ul>
+                <p class="user-card__text">транспорт:</p>
+                <ul class="user-card__transport transport">
                   <li class="transport__item transport__item--active">
                       <svg class="transport__icon transport__icon--airplane" role="img" width="17" height="22">
                         <use xlink:href="img/sprite.svg#icon-plane"></use>
@@ -1101,10 +1122,128 @@
                       </svg>
                   </li>
                 </ul>
-                <div class="user-list__user-level user-level">
+                <p class="user-card__text">левел:</p>
+                <div class="user-card__user-level user-level">
                   <span class="user-level__number">80</span>
                   <span class="user-level__text">level</span>
                 </div>
+                <a class="user-card__button button" href="#">Позвать</a>
+              </li>
+
+              <li class="user-card__item">
+                <h3 class="user-card__title">
+                  <a class="user-card__profile-link user-card__profile-link--busy" href="user-Smolov-Mark.html">Марк Смолов</a>
+                </h3>
+                <div class="user-card__wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+                    <img class="user-card__image" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg" alt="Марк Смолов">
+                  </picture>
+                </div>
+                <p class="user-card__likes">1700</p>
+                <ul class="user-card__tags tags">
+                  <li class="tags__item">#рэп</li>
+                  <li class="tags__item">#тату</li>
+                  <li class="tags__item">#хайпбист</li>
+                  <li class="tags__item">#кросовки</li>
+                  <li class="tags__item">#суприм</li>
+                </ul>
+                <p class="user-card__text">хочет посетить:</p>
+                <ul class="user-card__route route">
+                  <li class="route__item route__item--usa">США</li>
+                  <li class="route__item route__item--australia">Австралия</li>
+                  <li class="route__item route__item--dominican">Доминикана</li>
+                </ul>
+                <p class="user-card__text">транспорт:</p>
+                <ul class="user-card__transport transport">
+                  <li class="transport__item transport__item--active">
+                      <svg class="transport__icon transport__icon--airplane" role="img" width="17" height="22">
+                        <use xlink:href="img/sprite.svg#icon-plane"></use>
+                      </svg>
+                  </li>
+                  <li class="transport__item">
+                      <svg class="transport__icon transport__icon--bus" role="img" width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-bus"></use>
+                      </svg>
+                  </li>
+                  <li class="transport__item transport__item--active">
+                      <svg class="transport__icon transport__icon--bicycle" role="img" width="20" height="24">
+                        <use xlink:href="img/sprite.svg#icon-bike"></use>
+                      </svg>
+                  </li>
+                  <li class="transport__item">
+                      <svg class="transport__icon transport__icon--hiking" role="img" width="20" height="18">
+                        <use xlink:href="img/sprite.svg#icon-run"></use>
+                      </svg>
+                  </li>
+                </ul>
+                <p class="user-card__text">левел:</p>
+                <div class="user-card__user-level user-level">
+                  <span class="user-level__number">25</span>
+                  <span class="user-level__text">level</span>
+                </div>
+                <a class="user-card__button button" href="#">Позвать</a>
+              </li>
+
+              <li class="user-card__item">
+                <h3 class="user-card__title">
+                  <a class="user-card__profile-link user-card__profile-link--ready" href="user-Rogovaya-Larisa.html">Лариса Роговая</a>
+                </h3>
+                <div class="user-card__wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+                    <img class="user-card__image" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg" alt="Лариса Роговая">
+                  </picture>
+                </div>
+                <p class="user-card__likes">23</p>
+                <ul class="user-card__tags tags">
+                  <li class="tags__item">#образование</li>
+                  <li class="tags__item">#карьера</li>
+                  <li class="tags__item">#учёба</li>
+                  <li class="tags__item">#линкедин</li>
+                </ul>
+                <p class="user-card__text">хочет посетить:</p>
+                <ul class="user-card__route route">
+                  <li class="traveller__country-item traveller__country-item--britain">Великобритания</li>
+                  <li class="traveller__country-item traveller__country-item--germany">Германия</li>
+                </ul>
+                <p class="user-card__text">транспорт:</p>
+                <ul class="user-card__transport transport">
+                  <li class="transport__item transport__item--active">
+                      <svg class="transport__icon transport__icon--airplane" role="img" width="17" height="22">
+                        <use xlink:href="img/sprite.svg#icon-plane"></use>
+                      </svg>
+                  </li>
+                  <li class="transport__item transport__item--active">
+                      <svg class="transport__icon transport__icon--bus" role="img" width="20" height="20">
+                        <use xlink:href="img/sprite.svg#icon-bus"></use>
+                      </svg>
+                  </li>
+                  <li class="transport__item">
+                      <svg class="transport__icon transport__icon--bicycle" role="img" width="20" height="24">
+                        <use xlink:href="img/sprite.svg#icon-bike"></use>
+                      </svg>
+                  </li>
+                  <li class="transport__item">
+                      <svg class="transport__icon transport__icon--hiking" role="img" width="20" height="18">
+                        <use xlink:href="img/sprite.svg#icon-run"></use>
+                      </svg>
+                  </li>
+                </ul>
+                <p class="user-card__text">левел:</p>
+                <div class="user-card__user-level user-level">
+                  <span class="user-level__number">50</span>
+                  <span class="user-level__text">level</span>
+                </div>
+                <a class="user-card__button button" href="#">Позвать</a>
               </li>
             </ul>
 
