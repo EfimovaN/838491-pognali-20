@@ -115,6 +115,13 @@
 .user-card__text {
   margin: 0;
   padding: 0 26px;
+
+  &--level {
+    position: absolute;
+    width: 50px;
+    top: 269px;
+    right: 36px;
+  }
 }
 
 .user-card__route {
@@ -127,7 +134,13 @@
 
 .user-card__transport {
   list-style: none;
-
-
 }
+
+.user-card__user-level {
+  position: absolute;
+  top: 280px;
+  right: 36px;
+}
+
+
 

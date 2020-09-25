@@ -5,6 +5,34 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  &--catalog {
+    margin: 16px 0 0 22px;
+    justify-content: flex-start;
+
+    .transport__item {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #edeff6;
+      opacity: 1;
+
+      &--active {
+        .transport__icon {
+          opacity: 1;
+        }
+      }
+    }
+
+    .transport__icon {
+      margin-top: 8px;
+      opacity: 0.15;
+
+      &--active {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .transport__item {
