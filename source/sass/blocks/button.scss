@@ -102,6 +102,17 @@
       font-size: 20px;
       line-height: 20px;
     }
+  }
 
+  &--catalog {
+    margin: 0 auto;
+    width: 230px;;
+    text-align: center;
+    padding: 13px 20px 9px;
+    font-size: 17px;
+    line-height: 17px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    background-color: #ffd74b;
   }
 }

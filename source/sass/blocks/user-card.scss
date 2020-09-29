@@ -5,24 +5,22 @@
   font-size: 15px;
   line-height: 18px;
 
- 
 }
 
 .user-card__item {
+  margin: 0 0 10px 0;
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
+  padding: 0 0 22px;
   background-color: #ffffff;
   border-radius: 20px;
-  min-height: 415px;
   overflow: hidden;
 }
 
 .user-card__title {
   position: relative;
-  margin: 15px 42px 0 104px;
+  margin: 15px 60px 0 104px;
   font-size: 20px;
   line-height: 20px;
 }
@@ -36,7 +34,7 @@
     width: 6px;
     height: 6px;
     top: 8px;
-    right: -20px;
+    right: -38px;
     border-radius: 50%;
     background-color: #81e31e;
 
@@ -102,7 +100,7 @@
 }
 
 .user-card__tags {
-  padding: 0 35px 12px 26px;
+  padding: 0 45px 13px 26px;
   justify-content: left;
   list-style: none;
   text-align: left;
@@ -119,13 +117,13 @@
   &--level {
     position: absolute;
     width: 50px;
-    top: 269px;
+    bottom: 128px;
     right: 36px;
   }
 }
 
 .user-card__route {
-  margin: 17px 0 8px 0;
+  margin: 19px 0 9px 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -138,8 +136,12 @@
 
 .user-card__user-level {
   position: absolute;
-  top: 280px;
-  right: 36px;
+  bottom: 75px;
+  right: 22px;
+}
+
+.user-card__button {
+  margin-top: 18px;
 }
 
 
