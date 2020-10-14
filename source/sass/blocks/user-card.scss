@@ -5,6 +5,11 @@
   font-size: 15px;
   line-height: 18px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
 }
 
 .user-card__item {
@@ -16,6 +21,11 @@
   background-color: #ffffff;
   border-radius: 20px;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 40px 0;
+    padding-bottom: 19px;
+  }
 }
 
 .user-card__title {
@@ -23,6 +33,12 @@
   margin: 15px 60px 0 104px;
   font-size: 20px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 34px 60px 20px 258px;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .user-card__profile-link {
@@ -41,13 +57,23 @@
     @media (min-width: $tablet-width) {
       width: 8px;
       height: 8px;
-      right: 23px;
+      right: 152px;
+      top: 11px;
     }
   }
 
   &--busy {
     &::before {
       background-color: #f97676;
+    }
+  }
+
+  &--long {
+    &::before {
+      @media (min-width: $tablet-width) {
+        right: 118px;
+        top: 8px;
+      }
     }
   }
 }
@@ -57,6 +83,12 @@
   top: 17px;
   left: 18px;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 36px;
+    left: 35px;
+    border-radius: 20px;
+  }
 }
 
 .user-card__likes {
@@ -67,6 +99,14 @@
   line-height: 16px;
   font-weight: 700;
 
+  @media (min-width: $tablet-width) {
+    order: 2;
+    top: -40px;
+    left: 357px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -75,7 +115,14 @@
     top: 0;
     left: 69px;
     border-radius: 50%;
-    background-color: #F9EAEA;
+    background-color: #edeff6;
+
+    @media (min-width: $tablet-width) {
+      width: 50px;
+      height: 50px;
+      top: -9px;
+      left: 48px;
+    }
   }
 
   &::after {
@@ -87,14 +134,46 @@
     left: 77px;
     background-image: url("../img/heart.svg");
     background-repeat: no-repeat;
+    
+    @media (min-width: $tablet-width) {
+      width: 20px;
+      height: 17px;
+      top: 7px;
+      left: 63px;
+    }
   }
 
   &--active {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 0;
+      left: 69px;
+      border-radius: 50%;
+      background-color: #F9EAEA;
+
+      @media (min-width: $tablet-width) {
+        width: 50px;
+        height: 50px;
+        top: -9px;
+        left: 48px;
+      }
+    }
+
     &::after {
       width: 13px;
       height: 11px;
       background-image: url("../img/heart-active.svg");
       background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        width: 20px;
+        height: 17px;
+        top: 7px;
+        left: 63px;
+      }
     }
   }
 }
@@ -105,7 +184,11 @@
   list-style: none;
   text-align: left;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 166px 13px 261px;
+  }
 }
+
 .user-card__tags .tags__item {
   margin: 0 5px 0 0;
 }
@@ -114,11 +197,29 @@
   margin: 0;
   padding: 0 26px;
 
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    order: 3;
+    left: 58px;
+    bottom: 64px;
+    font-size: 15px;
+  }
+
   &--level {
     position: absolute;
     width: 50px;
     bottom: 128px;
     right: 36px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--transport {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -128,20 +229,42 @@
   display: flex;
   flex-direction: column;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+    flex-direction: row;
+    margin: 5px 0 0 12px;
+  }
 }
 
 .user-card__transport {
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    flex-direction: column;
+    top: 19px;
+    right: 40px;
+  }
 }
 
 .user-card__user-level {
   position: absolute;
   bottom: 75px;
   right: 22px;
+
+  @media (min-width: $tablet-width) {
+    top: 168px;
+    right: 23px;
+  }
 }
 
 .user-card__button {
   margin-top: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 32px;
+  }
 }
 
 

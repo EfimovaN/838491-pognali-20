@@ -15,12 +15,17 @@
   color: #ffffff;
 
   &--catalog {
-    padding-top: 5px;
-    width: 45px;
-    height: 45px;
-    font-weight: 700;
+    width: 63px;
+    height: 63px;
     background-color: transparent;
     color: #1d2e5b;
+    font-weight: 700;
+
+    @media (max-width: $tablet-width - 1 ) {
+      padding-top: 5px;
+      width: 45px;
+      height: 45px;
+    }
   }
 }
 
@@ -32,7 +37,6 @@
 
   &--catalog {
     font-weight: 700;
-
   }
 
   &::before {
@@ -44,5 +48,30 @@
     left: 11px;
     background-color: #ffffff;
     opacity: 0.3;
+  }
+}
+
+.user-level__level {
+  position: relative;
+  display: none; 
+
+  @media (min-width: $tablet-width) {
+    display: block;  
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #000000;
+    opacity: 0.4;  
+  }
+  
+  &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 1px;
+      top: -3px;
+      left: 11px;
+      background-color: #000000;
+      opacity: 0.3;
   }
 }

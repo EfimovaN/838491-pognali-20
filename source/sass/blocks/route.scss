@@ -9,6 +9,13 @@
   color: #1d2e5b;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 47px;
+    font-size: 20px;
+    line-height: 26px;
+    background-size: 35px 26px;
+  }
+
 
   &--sri-lanka {
     background-image: url("../img/flag-sri-lanka.svg");
@@ -49,7 +56,6 @@
   &--germany {
     background-image: url("../img/flag-germany.svg");
   }
-
 }
 
 .route__country {
