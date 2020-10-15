@@ -16,6 +16,10 @@
     background-size: 35px 26px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-left: 54px;
+  }
+
 
   &--sri-lanka {
     background-image: url("../img/flag-sri-lanka.svg");

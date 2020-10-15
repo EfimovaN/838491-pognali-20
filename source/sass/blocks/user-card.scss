@@ -9,7 +9,6 @@
     font-size: 20px;
     line-height: 23px;
   }
-
 }
 
 .user-card__item {
@@ -26,6 +25,11 @@
     margin: 0 0 40px 0;
     padding-bottom: 19px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 31px 0;
+    padding-bottom: 0;
+  }
 }
 
 .user-card__title {
@@ -38,6 +42,10 @@
     margin: 34px 60px 20px 258px;
     font-size: 30px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 45px 290px 20px 347px;
   }
 }
 
@@ -60,6 +68,11 @@
       right: 152px;
       top: 11px;
     }
+
+    @media (min-width: $desktop-width) {
+      left: -25px;
+      top: 11px;
+    }
   }
 
   &--busy {
@@ -70,7 +83,7 @@
 
   &--long {
     &::before {
-      @media (min-width: $tablet-width) {
+      @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
         right: 118px;
         top: 8px;
       }
@@ -89,6 +102,12 @@
     left: 35px;
     border-radius: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 0px;
+    left: 0px;
+    border-radius: 20px 0 0 20px;
+  }
 }
 
 .user-card__likes {
@@ -106,6 +125,13 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: -41px;
+    left: 442px;
+  }
+
+
 
   &::before {
     content: "";
@@ -187,6 +213,10 @@
   @media (min-width: $tablet-width) {
     padding: 0 166px 13px 261px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 341px 13px 347px;
+  }
 }
 
 .user-card__tags .tags__item {
@@ -203,6 +233,10 @@
     left: 58px;
     bottom: 64px;
     font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 
   &--level {
@@ -235,6 +269,14 @@
     flex-direction: row;
     margin: 5px 0 0 12px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    flex-direction: column;
+    position: absolute;
+    top: 45px;
+    left: 648px;
+  }
 }
 
 .user-card__transport {
@@ -246,6 +288,13 @@
     top: 19px;
     right: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    flex-direction: row;
+    top: 182px;
+    right: 151px;
+  }
 }
 
 .user-card__user-level {
@@ -254,8 +303,13 @@
   right: 22px;
 
   @media (min-width: $tablet-width) {
-    top: 168px;
+    bottom: 101px;
     right: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 40px;
+    right: 42px;
   }
 }
 

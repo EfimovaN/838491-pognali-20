@@ -1,3 +1,10 @@
+.companions-filtered {
+  @media (min-width: $desktop-width) {
+    margin-right: 50px;
+    width: 950px;
+  }
+}
+
 .companions-filtered__more {
   padding: 10px 0 0 44px;
   font-size: 20px;
@@ -13,7 +20,7 @@
     width: 26px;
     height: 26px;
     top: 1px;
-    left: 38px;
+    left: 0px;
     background-image: url("../img/show-more-plus.svg");
     background-repeat: no-repeat;
     color: #1d2e5b;
