@@ -6,23 +6,46 @@
 }
 
 .companions-filtered__more {
-  padding: 10px 0 0 44px;
-  font-size: 20px;
+  display: block;
+  position: relative;
+  padding: 18px 0 0 30px;
+  font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
   color: #1d2e5b;
   font-weight: 700;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    padding: 9px 0 0 44px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 38px 0 0 396px;
+    text-align: left;
+  }
+
   &::before {
     content: "";
     position: absolute;
-    width: 26px;
-    height: 26px;
-    top: 1px;
-    left: 0px;
+    width: 18px;
+    height: 18px;
+    top: 17px;
+    left: 60px;
     background-image: url("../img/show-more-plus.svg");
     background-repeat: no-repeat;
-    color: #1d2e5b;
+
+    @media (min-width: $tablet-width) {
+      width: 26px;
+      height: 26px;
+      top: 4px;
+      left: 248px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 35px;
+      left: 347px;
+    }
   }
 }
