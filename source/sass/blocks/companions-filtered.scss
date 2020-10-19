@@ -1,6 +1,13 @@
 .companions-filtered {
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 62px;
+  }
+  
   @media (min-width: $desktop-width) {
     margin-right: 50px;
+    padding-bottom: 78px;
     width: 950px;
   }
 }
