@@ -8,6 +8,7 @@
 .companions-filtered__more {
   display: block;
   position: relative;
+  margin-bottom: 24px;
   padding: 18px 0 0 30px;
   font-size: 17px;
   line-height: 20px;
@@ -17,11 +18,13 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
     padding: 9px 0 0 44px;
     font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
     padding: 38px 0 0 396px;
     text-align: left;
   }

@@ -40,8 +40,8 @@
           </button>
 
           <ul class="main-nav__site site-nav">
-            <li class="site-nav__item" href="index.html">
-              <a>О сервисе</a>
+            <li class="site-nav__item" >
+              <a href="index.html">О сервисе</a>
             </li>
             <li class="site-nav__item">
               <a href="form.html">Направления</a>
@@ -1264,7 +1264,7 @@
 
             <div class="companions-filtered__control-arrow control-arrow">
               <ul class="control-arrow__pagination pagination">
-                <li class="pagination__item pagination__item--active">
+                <li class="pagination__item pagination__item--current">
                   <a class="pagination__link" href="#">1</a>
                 </li>
                 <li class="pagination__item">
@@ -1277,12 +1277,14 @@
                   <a class="pagination__link" href="#">4</a>
                 </li>
               </ul>
-              <a class="control-arrow__arrow control-arrow__arrow--left" href="#">
-                <span class="visually-hidden">предыдущая</span>
-              </a>
-              <a class="control-arrow__arrow control-arrow__arrow--right" href="#">
-                <span class="visually-hidden">следующая</span>
-              </a>
+              <div class="control-arrow__wrapper">
+                <a class="control-arrow__arrow control-arrow__arrow--left" href="prev.html">
+                  <span class="visually-hidden">предыдущая</span>
+                </a>
+                <a class="control-arrow__arrow control-arrow__arrow--right" href="next.html">
+                  <span class="visually-hidden">следующая</span>
+                </a>
+              </div>
             </div>
 
           </section>
