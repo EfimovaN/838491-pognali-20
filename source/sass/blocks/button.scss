@@ -21,14 +21,16 @@
     text-transform: none;
   }
 
-  // &:hover,
-  // &:focus {
-  //   background-color: #5eaa2f;
-  // }
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+    transition: 0.3s;
+  }
 
-  // &:active {
-  //   color: fade-out(#ffffff, 0.7);
-  // }
+  &:active {
+    color: fade-out(#000000, 0.7);
+    transition: 0.3s;
+  }
 
   &--auth {
     padding: 10px 0;
@@ -101,6 +103,18 @@
       padding: 17px 20px 13px;
       font-size: 20px;
       line-height: 20px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.14));
+    }
+
+    &:active {
+      background-color: #ffbd30;
+      color: fade-out(#000000, 0.7);
+      transition: 0.3s;
     }
   }
 

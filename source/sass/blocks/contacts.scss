@@ -16,10 +16,6 @@
   }
 }
 
-.contacts__link {
-  color: #ffd74b;
-}
-
 .contacts__item {
   min-height: 45px;
   margin-left: 60px;
@@ -34,10 +30,21 @@
     min-height: 90px;
     width: 429px;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__link {
   position: relative;
+  color: #ffd74b;
+
+
+  &:hover,
+  &:focus {
+    color:  #ffbd30;
+  }
 
   &::before {
     content: "";

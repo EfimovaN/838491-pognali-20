@@ -76,6 +76,12 @@
     width: 62px;
     height: 62px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+    transition: 0.3s;
+  }
 }
 
 .page-footer__social .social__icon {
@@ -126,7 +132,13 @@
     border: none;
   }
 
-  @media (min-width: $desktop-width) {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

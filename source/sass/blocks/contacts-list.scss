@@ -15,6 +15,11 @@
 
 .contacts-list a {
   color:  #192144;
+
+  &:hover,
+  &:focus {
+    color:  #ffbd30;
+  }
 }
 
 .contacts-list__item {
@@ -29,6 +34,10 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     min-height: 50px;
+  }
+  
+  &:active {
+    opacity: 0.4;
   }
 }
 
@@ -56,6 +65,8 @@
       display: none;
     }
   }
+
+  
 }
 
 .contacts-list__icon {
@@ -83,6 +94,14 @@
   }
 
   &--phone {
+    @media (min-width: $desktop-width) {
+      &:hover,
+      &:focus {
+        background-color: #f26926;
+        transition: 0.3s;
+      }
+    }
+
     &::after {
       @media (min-width: $desktop-width) {
         background-image: url("../img/topmenu-phone.svg");
@@ -91,6 +110,14 @@
   }
 
   &--mail {
+    @media (min-width: $desktop-width) {
+      &:hover,
+      &:focus {
+        background-color: #ff8d30;
+        transition: 0.3s;
+      }
+    }
+
     @media (min-width: $desktop-width) {
       background-color: #ffbd30;
     }
@@ -135,7 +162,15 @@
       left: -70px;
     }
   }
+
+  
 }
+
+.contacts-list__item:hover .contacts-list__svg,
+.contacts-list__item:focus .contacts-list__svg {
+  color:  #ffbd30;
+}
+
 
 .contacts-list__contact {
   @media (min-width: $desktop-width) {

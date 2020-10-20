@@ -24,6 +24,17 @@
     color:  #ffffff;
 
   }
+
+  &:hover,
+  &:focus {
+    color:  #ffd74b;
+    transition: 0.3s;
+  }
+
+  &:active {
+    color: fade-out(#000000, 0.7);
+    transition: 0.3s;
+  }
 }
 
 .site-nav__item {
@@ -31,6 +42,4 @@
     margin-top: 5px;
     margin-right: 34px;
   }
-  
-
 }

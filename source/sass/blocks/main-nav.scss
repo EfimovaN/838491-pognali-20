@@ -113,10 +113,6 @@
 
 .main-nav--opened .main-nav__auth {
   display: block;
-
-  @media (min-width: $tablet-width) {
-    font-weight: 400;
-  }
 }
 
 .main-nav__site,
@@ -203,10 +199,18 @@
 }
 
 .main-nav__social {
+ 
   @media (min-width: $tablet-width) {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 4;
     margin: 102px 0 0;
+  }
+}
+
+.main-nav__social .social__link {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
   }
 }

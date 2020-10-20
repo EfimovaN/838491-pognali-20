@@ -4,9 +4,9 @@
   list-style: none;
   margin-left: 84px;
 
-
   @media (min-width: $tablet-width) {
     align-items: center;
+    margin-bottom: 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,11 +26,6 @@
 
 .social__icon {
   color: #192144;
-
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
 
   &:active {
     opacity: 0.3;
@@ -57,3 +52,4 @@
     }
   }
 }
+

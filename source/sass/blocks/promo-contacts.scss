@@ -28,6 +28,7 @@
   height: 40px;
   background-color: #ff8d30;
   border-radius: 50%;
+  
 
   &--img {
     &::after {
@@ -42,6 +43,12 @@
   }
 
   &--phone {
+    &:hover,
+    &:focus {
+      background-color: #f26926;
+      transition: 0.3s;
+    }
+
     &::after {
       background-image: url("../img/topmenu-phone.svg");
     }
@@ -49,6 +56,12 @@
 
   &--mail {
     background-color: #ffbd30;
+
+    &:hover,
+    &:focus {
+      background-color: #ff8d30;
+      transition: 0.3s;
+    }
      
     &::after {
       width: 17px;
