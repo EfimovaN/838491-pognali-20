@@ -245,6 +245,15 @@
       background-color: #e2e5f2;
     }
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .buisness-tariff__svg {
