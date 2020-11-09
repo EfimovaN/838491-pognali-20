@@ -1,0 +1,25 @@
+.map {
+  position: relative;
+  margin-top: -50px;
+  min-height: 363px;
+  background-color: #ededee;
+  z-index: 0;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    min-height: 565px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 496px;
+  }
+}
+
+.map__img iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: 0;
+}

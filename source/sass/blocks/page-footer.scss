@@ -1,0 +1,147 @@
+.page-footer {
+  position: relative;
+  margin-top: -50px;
+  padding: 10px 0 0;
+  font: inherit;
+  color: #1D2E5B;
+  background-color: #ffffff;
+  border-radius: 30px 30px 0 0;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 44px;
+    min-height: 140px;
+    border-radius: 60px 60px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 154px;
+    border-radius: 55px 55px 0 0;
+  }
+}
+
+.page-footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__logo {
+  padding-bottom: 28px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 164px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+  }
+}
+
+.page-footer__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0 0 36px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-left: -11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -48px;
+  }
+}
+
+.page-footer__social .social__item {
+  position: relative;
+  margin: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #ffd74b;
+
+  @media (min-width: $tablet-width) {
+    width: 62px;
+    height: 62px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+    transition: 0.3s;
+  }
+}
+
+.page-footer__social .social__icon {
+  position: absolute;
+  top: 12px;
+  left: 17px;
+
+  @media (min-width: $tablet-width) {
+    top: 16px;
+    left: 25px;
+  }
+
+  &--vk {
+    top: 17px;
+    left: 10px;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+      left: 16px;
+    }
+  }
+
+  &--instagram {
+    top: 15px;
+    left: 14px;
+
+    @media (min-width: $tablet-width) {
+      top: 20px;
+      left: 18px;
+    }
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 270px;
+  min-height: 66px;
+  text-align: left;
+  border-top: 1px solid #f2f2f2;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    width: 154px;
+    font-size: 20px;
+    line-height: 20px;
+    border: none;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__copyright a {
+  color: #192144;
+}

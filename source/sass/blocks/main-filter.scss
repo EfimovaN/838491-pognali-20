@@ -1,0 +1,422 @@
+.main-filter {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 30px;
+  padding: 25px 25px 22px;
+  border-radius: 20px;
+  background-color: #ffd74b;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1){
+    margin: 0 0 40px;
+    padding: 34px 35px 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: flex-start;
+    width: 285px;
+    margin: 0;
+    padding: 45px 48px 47px;
+  }
+}
+
+.main-filter__title {
+  margin: 0 0 23px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #1d2e5b;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1){
+    padding: 3px 0 45px;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0;
+    border-bottom: 1px solid #f3c72b;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 19px;
+  }
+}
+
+.main-filter__set {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #f3c72b;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    display: flex;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 2px;
+  }
+
+  &--level {
+    margin: 0 0 11px;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+      margin: 0 0 36px;
+      padding: 0 0 35px;
+      border-bottom: 1px solid #f3c72b;
+    }
+  }
+
+  &--transport {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+      margin: 0 0 11px;
+    }
+  }
+}
+
+.main-filter__container {
+  
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    display: flex;
+  }
+} 
+
+.main-filter__legend {
+  position: relative;
+  height: 39px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    width: 126px;
+    margin: 0 0 11px;
+    padding: 0 13px 0 0;
+  }
+}
+
+.main-filter__set--transport .main-filter__legend,
+.main-filter__set--level .main-filter__legend {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    margin: 8px 0 0;
+  }
+}
+
+.main-filter__toggle {
+  position: relative;
+  // z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 4px;
+    right: 0;
+    top: 18px;
+    transition: 0.3s;
+    background-image: url("../img/dropdown.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $desktop-width) {
+      right: -1px;
+      top: 23px;
+      width: 10px;
+      height: 5px;
+    }
+  }
+
+  &:hover::after {
+    opacity: 0.6;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.main-filter__legend-text {
+  position: absolute;
+  left: 1px;
+  top: 11px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  color: #1d2e5b;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    position: static;
+    display: flex;  
+  }
+}
+
+.main-filter__toggle:hover + .main-filter__legend-text {
+  color: fade_out(#1d2e5b, 1 - 0.6);
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    color: #1d2e5b;
+  }
+
+}
+
+.main-filter__toggle:active + .main-filter__legend-text {
+  color: fade_out(#1d2e5b, 1 - 0.3);
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    color: #1d2e5b;
+  }
+}
+
+.main-filter__legend-text2 {
+  display: none;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    display: inline;
+  }
+}
+
+.main-filter__set--active .main-filter__toggle::after {
+  transform: rotate(-180deg);
+}
+
+.main-filter__wrap {
+  display: none;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 511px;
+    margin: 0 0 15px;
+    padding: 4px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 0 0;
+  }
+
+  &--checkbox {
+    margin: 0;
+    flex-direction: column;
+    padding: 4px 0 8px;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 511px;
+      margin: 0 0 15px;
+      padding: 4px 0 0;
+    }
+  }
+
+  &--travel-modes {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+      margin: 1px 0 0 -5px;
+      padding: 0;
+    }
+    @media (min-width: $desktop-width) {
+      margin: 0 0 0 -3px;
+      padding: 18px 0 15px;
+    }
+    
+  }
+
+  &--level {
+    // display: none;
+    // padding: 2px 0 0;
+
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      width: 492px;
+      margin: 0;
+      padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding: 17px 0 0;
+    }
+  }
+}
+
+.main-filter__set--active .main-filter__wrap {
+  display: flex;
+}
+
+.main-filter__label {
+  margin: 0 0 10px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    width: calc(100% / 3);
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 16px;
+  }
+
+  &:last-child {
+    @media (min-width: $desktop-width) {
+      margin: 0 0 13px;
+    }
+  }
+}
+
+.main-filter__label-text {
+  position: relative;
+  display: block;
+  padding: 0 0 0 27px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 0 0 36px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    left: 5px;
+    top: 5px;
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 12px;
+      height: 12px;
+      left: 6px;
+      top: 6px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 6px;
+      top: 6px;
+    }
+  }
+}
+
+.main-filter__checkbox:checked + .main-filter__label-text::after {
+  display: block;
+}
+
+.main-filter__label:hover .main-filter__label-text {
+  color: fade_out(#444444, 1 - 0.6);
+
+  &::before {
+    background-color: fade_out(#ffffff, 1 - 0.6);
+  }
+
+  &::after {
+    opacity: 0.6;
+  }
+}
+
+.main-filter__label:active .main-filter__label-text {
+  color: fade_out(#444444, 1 - 0.3);
+
+  &::before {
+    background-color: fade_out(#ffffff, 1 - 0.3);
+  }
+
+  &::after {
+    opacity: 0.3;
+  }
+}
+
+.main-filter__checkbox:focus + .main-filter__label-text::before {
+  background-color: fade_out(#ffffff, 1 - 0.5);
+}
+
+.main-filter__set--active .main-filter__wrap--level {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-filter__show {
+  display: block;
+  width: calc(100% + 10px);
+  height: 40px;
+  margin: 0 0 0 -5px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #161c35;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  transition: 0.3s;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0 5px 0 0;
+    border-radius: 25px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% + 7px);
+    margin: 28px 0 0;
+  }
+
+  &:hover {
+    box-shadow: 0 2px 10px 0 #00000014;
+  }
+
+  &:active {
+    color: fade_out(#161c35, 1 - 0.3);
+    background-color: #f3c72b;
+  }
+}

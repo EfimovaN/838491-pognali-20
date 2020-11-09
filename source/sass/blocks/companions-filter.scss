@@ -1,0 +1,19 @@
+.companions-filter {
+  padding-top: 76px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 182px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 32px;
+  }
+}
+
+.companions-filter .container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,269 @@
+.buisness-tariff {
+  margin-top: -55px;
+  padding: 88px 0 36px;
+  position: relative;
+  background-color: #e6e8f1;
+  border-radius: 0 0 30px 30px;
+  font: inherit;
+  z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 83px;
+    background-color: #edeff6;
+    border-radius: 0 0 60px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 185px;
+    border-radius: 0 0 55px 55px;
+  }
+}
+
+.buisness-tariff .container {
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
+  }
+}
+
+.buisness-tariff__title {
+  position: relative;
+  padding: 0 95px 22px 25px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #ff8d30;
+
+  @media (min-width: $tablet-width) {
+    padding: 4px 95px 36px 98px;
+    font-size: 45px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 37px 95px 94px 98px;
+  }
+
+  
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -16px;
+    right: 0;
+    background-image: url("../img/rates@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/rates@2x.png");
+      background-size: 100px auto;
+    }
+
+    @media (min-width: $tablet-width) {
+      top: 340px;
+      right: 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 198px;
+      height: 198px;
+      top: 217px;
+      right: 3px;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/rates@2x.png");
+        background-size: 198px auto;
+      }
+    }
+  }
+}
+
+.buisness-tariff__list {
+  position: relative;
+  margin: 0;
+  padding: 0 0 29px 24px;
+  width: 225px;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 2px 0 57px 90px;
+    width: 654px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 905px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 198px;
+      height: 285px;
+      top: -41px;
+      right: -34px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      width: 446px;
+      height: 300px;
+      top: -49px;
+      right: -161px;
+    }
+  }
+}
+
+.buisness-tariff__item {
+  position: relative;
+  padding-top: 10px;
+  min-height: 65px;
+  border-bottom: 1px solid #e1e3e9;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    line-height: 28px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &:first-child {
+    min-height: 67px;
+    border-top: 1px solid #e1e3e9;
+  }
+
+  &:nth-child(2) {
+    min-height: 67px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 4px;
+    right: -45px;
+    background-color: #ff8d30;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 68px;
+      height: 68px;
+      top: -3px;
+      right: 0;
+      left: -90px;
+      font-size: 28px;
+      line-height: 28px;
+    }
+  }
+
+  &--second {
+    &::after {
+      background-color: #ffbd30;
+    }
+  }
+
+  &--third {
+    &::after {
+      background-color: #ffd74b;
+    }
+  }
+
+  &::before {
+    content: "1";
+    position: absolute;
+    top: 10px;
+    right: -32px;
+    font-size: 16px;
+    color: #ffffff;
+    z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      font-size: 28px;
+      top: 18px;
+      left: -63px;
+    }
+  }
+
+  &--first {
+    &::before {
+      content: "1";
+    }
+  }
+
+  &--second {
+    &::before {
+      content: "2";
+    }
+  }
+
+  &--third {
+    &::before {
+      content: "3";
+    }
+  }
+}
+
+.buisness-tariff__feature {
+  margin: 0;
+}
+
+.buisness-tariff__cost {
+  margin: 0;
+}
+
+.buisness-tariff__open {
+  position: relative;
+  margin: 0 0 0 24px;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: 700;
+  color: #132576;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 65px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 68px;
+      height: 68px;
+      top: -11px;
+      left: -24px;
+      border-radius: 50%;
+      background-color: #e2e5f2;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.buisness-tariff__svg {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    display: inline-block;
+    top: 13px;
+    left: -1px;
+    color: #132576;
+  }
+}

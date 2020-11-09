@@ -1,0 +1,33 @@
+.pagination {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+}
+
+.pagination__item {
+  position: relative;
+  text-align: center;
+
+  &--current {
+    border-radius: 50%;
+    background-color: #ffd74b;
+  }
+}
+
+.pagination__link {
+  display: block;
+  padding-top: 17px;
+  color: #1d2e5b;
+  width: 50px;
+  height: 50px;
+}
+

@@ -1,0 +1,159 @@
+.form {
+  position: relative;
+  margin-top: -50px;
+  padding: 102px 0 14px;
+  background-color: #192144;
+  border-radius: 0 0 30px 30px;
+  text-align: center;
+  color: #ffffff;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    padding: 88px 0 38px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 123px 0 70px;
+    border-radius: 0 0 55px 55px;
+  }
+}
+
+.form .container {
+  @media (min-width: $tablet-width) {
+    padding: 0 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
+  }
+}
+
+.form__title {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #ff8d30;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 22px;
+    font-size: 45px;
+    line-height: 45px;
+    text-align: center;
+  }
+}
+
+.form__text {
+  margin: 0 auto;
+  width: 215px;
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    width: 617px;
+    font-size: 28px;
+    line-height: 32px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 59px;
+    line-height: 31px;
+  }
+
+  &--quest {
+    padding-bottom: 31px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 64px;
+      letter-spacing: 0.01em;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 75px;
+    }
+  }
+}
+
+.form__text-link {
+  color: #ffd74b;
+  text-decoration: underline;
+}
+
+.form__login-form {
+  position: relative;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 70px;
+  }
+
+}
+
+.form__login-input {
+  padding: 0 70px 0 24px;
+  width: 270px;
+  height: 62px;
+  font-weight: 700;
+  vertical-align: middle;
+  color: rgba(68,68,68,.3);
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 90px 0 35px;
+    width: 616px;
+    height: 80px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1174px;
+    border-radius: 18px;
+  }
+}
+
+.form__login-submit {
+  position: absolute;
+  width: 60px;
+  height: 62px;
+  top: 0;
+  right: 0;
+  font-size: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    border-radius: 0 20px 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 325px;
+    border-radius: 0 18px 18px 0;
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.form__contacts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  color: #ffd74b;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+  }
+}
+
+.form__contacts .contacts-list__link {
+  color: #ffd74b;
+  text-transform: uppercase;
+}
